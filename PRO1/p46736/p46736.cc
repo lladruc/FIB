@@ -1,4 +1,4 @@
-#include <ioscream>
+#include <iostream>
 using namespace std;
 bool es_de_hamming(int x) {
         if (x== 1) return true;
