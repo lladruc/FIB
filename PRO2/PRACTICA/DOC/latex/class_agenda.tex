@@ -1,0 +1,131 @@
+\hypertarget{class_agenda}{}\section{Referencia de la Clase Agenda}
+\label{class_agenda}\index{Agenda@{Agenda}}
+
+
+Conte el conjunt.  
+
+
+
+
+{\ttfamily \#include $<$Agenda.\+hh$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_agenda_a2c929acc7e13b65b5a597b94db249c08}{add\+Event} (string titol, string date, string hora, stack$<$ string $>$ \&tags)
+\begin{DoxyCompactList}\small\item\em Metode universal per agregar un event. \end{DoxyCompactList}\item 
+void \hyperlink{class_agenda_abd4b2a2bb44123f0dafdf9d998503ef6}{mod\+Event} (\hyperlink{class_rellotge}{Rellotge} key, string titol, string date, string hora, stack$<$ string $>$ \&tags)
+\item 
+void \hyperlink{class_agenda_ae71248c9fc4536a04ee92e4702cf1f64}{del\+Event} (\hyperlink{class_rellotge}{Rellotge} key)
+\begin{DoxyCompactList}\small\item\em Metode de borrat de l\textquotesingle{}event. \end{DoxyCompactList}\item 
+void \hyperlink{class_agenda_a8597c9f9b56ed54b9b91594c4c204de5}{list\+Match\+Events} (string \&tags, vector$<$ string $>$ \&v, ev\+Pointer ini, ev\+Pointer end)
+\begin{DoxyCompactList}\small\item\em Metode de consulta per expresió regular. \end{DoxyCompactList}\item 
+void \hyperlink{class_agenda_a93fe3e71fb6d328789fccb791bac4226}{search} (vector$<$ string $>$ \&v, string ini, string end)
+\begin{DoxyCompactList}\small\item\em Metode de consulta generic en funció de dates, present o futur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Conte el conjunt. 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_agenda_a2c929acc7e13b65b5a597b94db249c08}{}\index{Agenda@{Agenda}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!Agenda@{Agenda}}
+\subsubsection[{add\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Agenda\+::add\+Event (
+\begin{DoxyParamCaption}
+\item[{string}]{titol, }
+\item[{string}]{date, }
+\item[{string}]{hora, }
+\item[{stack$<$ string $>$ \&}]{tags}
+\end{DoxyParamCaption}
+)}\label{class_agenda_a2c929acc7e13b65b5a597b94db249c08}
+
+
+Metode universal per agregar un event. 
+
+\begin{DoxyPrecond}{Precondición}
+Els camps no poden ser \char`\"{}empty\char`\"{}, excepte tags 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+si l\textquotesingle{}event no es passat i no existeix un altre event en la mateixa data i hora exactes, s\textquotesingle{}haura agregat a l\textquotesingle{}agenda. 
+\end{DoxyPostcond}
+\hypertarget{class_agenda_ae71248c9fc4536a04ee92e4702cf1f64}{}\index{Agenda@{Agenda}!del\+Event@{del\+Event}}
+\index{del\+Event@{del\+Event}!Agenda@{Agenda}}
+\subsubsection[{del\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Agenda\+::del\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Rellotge}}]{key}
+\end{DoxyParamCaption}
+)}\label{class_agenda_ae71248c9fc4536a04ee92e4702cf1f64}
+
+
+Metode de borrat de l\textquotesingle{}event. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\hyperlink{class_agenda}{Agenda} conte els events excepte el marcat pel rellotge 
+\end{DoxyPostcond}
+\hypertarget{class_agenda_a8597c9f9b56ed54b9b91594c4c204de5}{}\index{Agenda@{Agenda}!list\+Match\+Events@{list\+Match\+Events}}
+\index{list\+Match\+Events@{list\+Match\+Events}!Agenda@{Agenda}}
+\subsubsection[{list\+Match\+Events}]{\setlength{\rightskip}{0pt plus 5cm}void Agenda\+::list\+Match\+Events (
+\begin{DoxyParamCaption}
+\item[{string \&}]{tags, }
+\item[{vector$<$ string $>$ \&}]{v, }
+\item[{ev\+Pointer}]{ini, }
+\item[{ev\+Pointer}]{end}
+\end{DoxyParamCaption}
+)}\label{class_agenda_a8597c9f9b56ed54b9b91594c4c204de5}
+
+
+Metode de consulta per expresió regular. 
+
+\begin{DoxyPrecond}{Precondición}
+Vector v is \char`\"{}empty\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+v conte els elements que coincideixen en l\textquotesingle{}expresio regular 
+\end{DoxyPostcond}
+\hypertarget{class_agenda_abd4b2a2bb44123f0dafdf9d998503ef6}{}\index{Agenda@{Agenda}!mod\+Event@{mod\+Event}}
+\index{mod\+Event@{mod\+Event}!Agenda@{Agenda}}
+\subsubsection[{mod\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Agenda\+::mod\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Rellotge}}]{key, }
+\item[{string}]{titol, }
+\item[{string}]{date, }
+\item[{string}]{hora, }
+\item[{stack$<$ string $>$ \&}]{tags}
+\end{DoxyParamCaption}
+)}\label{class_agenda_abd4b2a2bb44123f0dafdf9d998503ef6}
+Metode universal per modificar un event \begin{DoxyPrecond}{Precondición}
+Almenys un dels camps no pot ser \char`\"{}empty\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si no viatja al passat, l\textquotesingle{}event s\textquotesingle{}ha modificat 
+\end{DoxyPostcond}
+\hypertarget{class_agenda_a93fe3e71fb6d328789fccb791bac4226}{}\index{Agenda@{Agenda}!search@{search}}
+\index{search@{search}!Agenda@{Agenda}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}void Agenda\+::search (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{v, }
+\item[{string}]{ini, }
+\item[{string}]{end}
+\end{DoxyParamCaption}
+)}\label{class_agenda_a93fe3e71fb6d328789fccb791bac4226}
+
+
+Metode de consulta generic en funció de dates, present o futur. 
+
+\begin{DoxyPrecond}{Precondición}
+data inicial o data final no son buits 
+
+les dates compleixen el format dd.\+mm.\+yy \mbox{[}on \hyperlink{class_rellotge}{Rellotge} use method print\+Date and print\+Hour\mbox{]}; 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Vector v conte els elements que coincideixen en l\textquotesingle{}expresio regular 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_agenda_8hh}{Agenda.\+hh}\item 
+src/Agenda.\+cc\end{DoxyCompactItemize}

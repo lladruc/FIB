@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Lab Pro2 [PRACTICA]: Fichero Fuente src/Rellotge.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Lab Pro2 [PRACTICA]
+   &#160;<span id="projectnumber">0.0.1:0001</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Rellotge.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_rellotge_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef RELLOTGE_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define RELLOTGE_HH</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_rellotge.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rellotge.html">Rellotge</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>: </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// Constructora</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_rellotge.html">Rellotge</a>(); <span class="comment">// inicialitze at: 20.04.15 00:00</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_rellotge.html">Rellotge</a>(<span class="keywordtype">string</span> date, <span class="keywordtype">string</span> hora);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="class_rellotge.html">Rellotge</a>&amp; r) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">// Destructora</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ~<a class="code" href="class_rellotge.html">Rellotge</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">//Consultores</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#addfca1622b9aeba2cdff685060871153">getDate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#af7a5cf18e7903db9fbaffe526fcf5a06">getTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#a2ee21b1a870f7ca670e54cadeb0ee62d">getDateAndTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#abe2b43818a3c3283d499a4070efa6c7f">printDateAndTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_rellotge.html#a19fc5ccb1b3949979f03f207f877c059">setDate</a>(<span class="keywordtype">string</span> date);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_rellotge.html#a8b4ddc7c6b02397c415a2f0ca815dc04">setTime</a>(<span class="keywordtype">string</span> hora);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_rellotge.html#a418c7be8bf66f6e27291d6b77dcd969f">setTimeAndDate</a>(<span class="keywordtype">string</span> date, <span class="keywordtype">string</span> hora);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#abd7aa59db639ffc1e29154ba8283d7ed">printDate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="class_rellotge.html#a199013b85b09d5de7abae60c7de1750c">Rellotge::rollBack</a>(<span class="keywordtype">string</span> date);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  strig date;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">string</span> hora;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">//bool notBack(const string&amp; date, const string&amp; hora);</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="ttc" id="class_rellotge_html_a2ee21b1a870f7ca670e54cadeb0ee62d"><div class="ttname"><a href="class_rellotge.html#a2ee21b1a870f7ca670e54cadeb0ee62d">Rellotge::getDateAndTime</a></div><div class="ttdeci">string getDateAndTime() const </div><div class="ttdoc">Retorna una string del tipus dd.mm.yy hh:mm. </div></div>
+<div class="ttc" id="class_rellotge_html_addfca1622b9aeba2cdff685060871153"><div class="ttname"><a href="class_rellotge.html#addfca1622b9aeba2cdff685060871153">Rellotge::getDate</a></div><div class="ttdeci">string getDate() const </div><div class="ttdoc">Retorna un string del tipus dd.mm.yy. </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:43</div></div>
+<div class="ttc" id="class_rellotge_html_a418c7be8bf66f6e27291d6b77dcd969f"><div class="ttname"><a href="class_rellotge.html#a418c7be8bf66f6e27291d6b77dcd969f">Rellotge::setTimeAndDate</a></div><div class="ttdeci">void setTimeAndDate(string date, string hora)</div><div class="ttdoc">Actualitza la data del sistema amb l&#39;obtinguda. </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:103</div></div>
+<div class="ttc" id="class_rellotge_html_a8b4ddc7c6b02397c415a2f0ca815dc04"><div class="ttname"><a href="class_rellotge.html#a8b4ddc7c6b02397c415a2f0ca815dc04">Rellotge::setTime</a></div><div class="ttdeci">void setTime(string hora)</div><div class="ttdoc">actualitza la hora del sistema amb l&#39;obtinguda </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:93</div></div>
+<div class="ttc" id="class_rellotge_html_a19fc5ccb1b3949979f03f207f877c059"><div class="ttname"><a href="class_rellotge.html#a19fc5ccb1b3949979f03f207f877c059">Rellotge::setDate</a></div><div class="ttdeci">void setDate(string date)</div><div class="ttdoc">actualitza la data del sistema amb l&#39;obtinguda </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:83</div></div>
+<div class="ttc" id="class_rellotge_html"><div class="ttname"><a href="class_rellotge.html">Rellotge</a></div><div class="ttdoc">Controla el pas del temps actualitzable per l&#39;usuari. Aquest s&#39;inicialitza a 20.04.15 00:00. </div><div class="ttdef"><b>Definition:</b> Rellotge.hh:14</div></div>
+<div class="ttc" id="class_rellotge_html_abe2b43818a3c3283d499a4070efa6c7f"><div class="ttname"><a href="class_rellotge.html#abe2b43818a3c3283d499a4070efa6c7f">Rellotge::printDateAndTime</a></div><div class="ttdeci">string printDateAndTime() const </div><div class="ttdoc">Escriu la data en format desitjat per l&#39;usuari. </div></div>
+<div class="ttc" id="class_rellotge_html_a199013b85b09d5de7abae60c7de1750c"><div class="ttname"><a href="class_rellotge.html#a199013b85b09d5de7abae60c7de1750c">Rellotge::rollBack</a></div><div class="ttdeci">string rollBack(string date)</div><div class="ttdoc">camiba yy <-> dd sobre el string. </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:113</div></div>
+<div class="ttc" id="class_rellotge_html_af7a5cf18e7903db9fbaffe526fcf5a06"><div class="ttname"><a href="class_rellotge.html#af7a5cf18e7903db9fbaffe526fcf5a06">Rellotge::getTime</a></div><div class="ttdeci">string getTime() const </div><div class="ttdoc">Retorna una string del tipus hh:mm. </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:51</div></div>
+<div class="ttc" id="class_rellotge_html_abd7aa59db639ffc1e29154ba8283d7ed"><div class="ttname"><a href="class_rellotge.html#abd7aa59db639ffc1e29154ba8283d7ed">Rellotge::printDate</a></div><div class="ttdeci">string printDate() const </div><div class="ttdoc">Mostra torna la data en el format correcte dd.mm.yy. </div><div class="ttdef"><b>Definition:</b> Rellotge.cc:74</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 4 de Mayo de 2015 12:23:51 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

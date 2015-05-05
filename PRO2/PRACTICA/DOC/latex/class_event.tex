@@ -1,0 +1,142 @@
+\hypertarget{class_event}{}\section{Referencia de la Clase Event}
+\label{class_event}\index{Event@{Event}}
+
+
+Conté un únic event.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+hh$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_event_aa37d3f6b20a3ba3d174962b8cb76b64e}{}{\bfseries Event} (string titol, stack$<$ string $>$ tags)\label{class_event_aa37d3f6b20a3ba3d174962b8cb76b64e}
+
+\item 
+string \hyperlink{class_event_a5a674a90725e7589757e98de7f109243}{get\+Titol} () const 
+\begin{DoxyCompactList}\small\item\em retorna el titol de l\textquotesingle{}event. \end{DoxyCompactList}\item 
+string \hyperlink{class_event_ad17c21131ed964fc3498689e9f7413b4}{get\+Tags} () const 
+\begin{DoxyCompactList}\small\item\em Retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a16ed22cc72c0249ade170184f280a1d8}{set\+Titol} (string titol)
+\begin{DoxyCompactList}\small\item\em Assigna un nou titol. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}{set\+Tags} (stack$<$ string $>$ tags)
+\begin{DoxyCompactList}\small\item\em Assigna un nou tag a l\textquotesingle{}event. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a7bd83fe91f68446aee88fd69bd9ee388}{del\+Tag} (stack$<$ string $>$ tags)
+\begin{DoxyCompactList}\small\item\em Metode d\textquotesingle{}esborrat de tags de l\textquotesingle{}event. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a58e213ecfa7b2beedc275a2b4dc86eaf}{del\+All\+Tags} ()
+\begin{DoxyCompactList}\small\item\em esborra tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Conté un únic event. 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_event_a58e213ecfa7b2beedc275a2b4dc86eaf}{}\index{Event@{Event}!del\+All\+Tags@{del\+All\+Tags}}
+\index{del\+All\+Tags@{del\+All\+Tags}!Event@{Event}}
+\subsubsection[{del\+All\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::del\+All\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_event_a58e213ecfa7b2beedc275a2b4dc86eaf}
+
+
+esborra tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]} 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L\textquotesingle{}event no contindra cap tag 
+\end{DoxyPostcond}
+\hypertarget{class_event_a7bd83fe91f68446aee88fd69bd9ee388}{}\index{Event@{Event}!del\+Tag@{del\+Tag}}
+\index{del\+Tag@{del\+Tag}!Event@{Event}}
+\subsubsection[{del\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::del\+Tag (
+\begin{DoxyParamCaption}
+\item[{stack$<$ string $>$}]{tags}
+\end{DoxyParamCaption}
+)}\label{class_event_a7bd83fe91f68446aee88fd69bd9ee388}
+
+
+Metode d\textquotesingle{}esborrat de tags de l\textquotesingle{}event. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+tags conte tots els tags menys els rebuts 
+\end{DoxyPostcond}
+\hypertarget{class_event_ad17c21131ed964fc3498689e9f7413b4}{}\index{Event@{Event}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Event@{Event}}
+\subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}string Event\+::get\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_event_ad17c21131ed964fc3498689e9f7413b4}
+
+
+Retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un string amb tots els tags separats per espais \char`\"{}\#tag1 \#tag2 \#tag\+N\char`\"{} 
+\end{DoxyPostcond}
+\hypertarget{class_event_a5a674a90725e7589757e98de7f109243}{}\index{Event@{Event}!get\+Titol@{get\+Titol}}
+\index{get\+Titol@{get\+Titol}!Event@{Event}}
+\subsubsection[{get\+Titol}]{\setlength{\rightskip}{0pt plus 5cm}string Event\+::get\+Titol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_event_a5a674a90725e7589757e98de7f109243}
+
+
+retorna el titol de l\textquotesingle{}event. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna el titol de l\textquotesingle{}event. 
+\end{DoxyPostcond}
+\hypertarget{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}{}\index{Event@{Event}!set\+Tags@{set\+Tags}}
+\index{set\+Tags@{set\+Tags}!Event@{Event}}
+\subsubsection[{set\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::set\+Tags (
+\begin{DoxyParamCaption}
+\item[{stack$<$ string $>$}]{tags}
+\end{DoxyParamCaption}
+)}\label{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}
+
+
+Assigna un nou tag a l\textquotesingle{}event. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Tags incloura el nou tag 
+\end{DoxyPostcond}
+\hypertarget{class_event_a16ed22cc72c0249ade170184f280a1d8}{}\index{Event@{Event}!set\+Titol@{set\+Titol}}
+\index{set\+Titol@{set\+Titol}!Event@{Event}}
+\subsubsection[{set\+Titol}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::set\+Titol (
+\begin{DoxyParamCaption}
+\item[{string}]{titol}
+\end{DoxyParamCaption}
+)}\label{class_event_a16ed22cc72c0249ade170184f280a1d8}
+
+
+Assigna un nou titol. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Titol pren per valor el rebut per parametre 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_event_8hh}{Event.\+hh}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{main_8cc}{\section{Referencia del Archivo main.\-cc}
+\label{main_8cc}\index{main.\-cc@{main.\-cc}}
+}
+Dependencia gráfica adjunta para main.\-cc\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cc_a81b3ecc862f6ffa38e105614d2aaad55}{menu} (Comanda \&c, \hyperlink{class_rellotge}{Rellotge} \&r)
+\item 
+int \hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{main_8cc_a81b3ecc862f6ffa38e105614d2aaad55}{\index{main.\-cc@{main.\-cc}!menu@{menu}}
+\index{menu@{menu}!main.cc@{main.\-cc}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}void menu (
+\begin{DoxyParamCaption}
+\item[{Comanda \&}]{c, }
+\item[{{\bf Rellotge} \&}]{r}
+\end{DoxyParamCaption}
+)}}\label{main_8cc_a81b3ecc862f6ffa38e105614d2aaad55}
+
+
+Definición en la línea 9 del archivo main.\-cc.
+
+
+\begin{DoxyCode}
+                                  \{
+  \textcolor{comment}{//}
+  
+\}
+\end{DoxyCode}
+\hypertarget{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{main.\-cc@{main.\-cc}!main@{main}}
+\index{main@{main}!main.cc@{main.\-cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definición en la línea 16 del archivo main.\-cc.
+
+
+\begin{DoxyCode}
+          \{
+  \textcolor{comment}{// arrancar rellotge}
+  \hyperlink{class_rellotge}{Rellotge} r;
+  \textcolor{comment}{// crear llista/vector buit de tasques}
+  Comanda c;
+  \textcolor{comment}{// bucle lectura dades.}
+  \textcolor{keywordtype}{string} op;
+  \textcolor{keywordtype}{bool} be = \textcolor{keyword}{false};
+  \textcolor{keywordflow}{while}(c.llegir(be))\{
+    \textcolor{keywordflow}{if}(be) \hyperlink{main_8cc_a81b3ecc862f6ffa38e105614d2aaad55}{menu}(c)
+  \}
+\}\end{DoxyCode}

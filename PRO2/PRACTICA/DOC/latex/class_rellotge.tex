@@ -1,0 +1,246 @@
+\hypertarget{class_rellotge}{}\section{Referencia de la Clase Rellotge}
+\label{class_rellotge}\index{Rellotge@{Rellotge}}
+
+
+Controla el pas del temps actualitzable per l\textquotesingle{}usuari. Aquest s\textquotesingle{}inicialitza a 20.\+04.\+15 00\+:00.  
+
+
+
+
+{\ttfamily \#include $<$Rellotge.\+hh$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rellotge_a32a5ede4b39b3dfc22a10d93a68d4173}{Rellotge} (string date, string hora)
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R\+A R\+E\+C\+O\+M\+A\+N\+A\+D\+A. \end{DoxyCompactList}\item 
+\hypertarget{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}{}bool {\bfseries operator$<$} (const \hyperlink{class_rellotge}{Rellotge} \&r) const \label{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}
+
+\item 
+string \hyperlink{class_rellotge_addfca1622b9aeba2cdff685060871153}{get\+Date} () const 
+\begin{DoxyCompactList}\small\item\em Retorna un string del tipus dd.\+mm.\+yy. \end{DoxyCompactList}\item 
+string \hyperlink{class_rellotge_af7a5cf18e7903db9fbaffe526fcf5a06}{get\+Time} () const 
+\begin{DoxyCompactList}\small\item\em Retorna una string del tipus hh\+:mm. \end{DoxyCompactList}\item 
+string \hyperlink{class_rellotge_a2ee21b1a870f7ca670e54cadeb0ee62d}{get\+Date\+And\+Time} () const 
+\begin{DoxyCompactList}\small\item\em Retorna una string del tipus dd.\+mm.\+yy hh\+:mm. \end{DoxyCompactList}\item 
+string \hyperlink{class_rellotge_abe2b43818a3c3283d499a4070efa6c7f}{print\+Date\+And\+Time} () const 
+\begin{DoxyCompactList}\small\item\em Escriu la data en format desitjat per l\textquotesingle{}usuari. \end{DoxyCompactList}\item 
+void \hyperlink{class_rellotge_a19fc5ccb1b3949979f03f207f877c059}{set\+Date} (string date)
+\begin{DoxyCompactList}\small\item\em actualitza la data del sistema amb l\textquotesingle{}obtinguda \end{DoxyCompactList}\item 
+void \hyperlink{class_rellotge_a8b4ddc7c6b02397c415a2f0ca815dc04}{set\+Time} (string hora)
+\begin{DoxyCompactList}\small\item\em actualitza la hora del sistema amb l\textquotesingle{}obtinguda \end{DoxyCompactList}\item 
+void \hyperlink{class_rellotge_a418c7be8bf66f6e27291d6b77dcd969f}{set\+Time\+And\+Date} (string date, string hora)
+\begin{DoxyCompactList}\small\item\em Actualitza la data del sistema amb l\textquotesingle{}obtinguda. \end{DoxyCompactList}\item 
+string \hyperlink{class_rellotge_abd7aa59db639ffc1e29154ba8283d7ed}{print\+Date} () const 
+\begin{DoxyCompactList}\small\item\em Mostra torna la data en el format correcte dd.\+mm.\+yy. \end{DoxyCompactList}\item 
+string \hyperlink{class_rellotge_a199013b85b09d5de7abae60c7de1750c}{roll\+Back} (string date)
+\begin{DoxyCompactList}\small\item\em camiba yy $<$-\/$>$ dd sobre el string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Controla el pas del temps actualitzable per l\textquotesingle{}usuari. Aquest s\textquotesingle{}inicialitza a 20.\+04.\+15 00\+:00. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_rellotge_a32a5ede4b39b3dfc22a10d93a68d4173}{}\index{Rellotge@{Rellotge}!Rellotge@{Rellotge}}
+\index{Rellotge@{Rellotge}!Rellotge@{Rellotge}}
+\subsubsection[{Rellotge}]{\setlength{\rightskip}{0pt plus 5cm}Rellotge\+::\+Rellotge (
+\begin{DoxyParamCaption}
+\item[{string}]{date, }
+\item[{string}]{hora}
+\end{DoxyParamCaption}
+)}\label{class_rellotge_a32a5ede4b39b3dfc22a10d93a68d4173}
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R\+A R\+E\+C\+O\+M\+A\+N\+A\+D\+A. 
+
+\begin{DoxyPrecond}{Precondición}
+Ha de rebre dos strings\+: \char`\"{}dd.\+mm.\+yy\char`\"{} y \char`\"{}hh\+:mm\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+crea un rellotge inicialitzat. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_rellotge_addfca1622b9aeba2cdff685060871153}{}\index{Rellotge@{Rellotge}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Rellotge@{Rellotge}}
+\subsubsection[{get\+Date}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::get\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_addfca1622b9aeba2cdff685060871153}
+
+
+Retorna un string del tipus dd.\+mm.\+yy. 
+
+Retorna un string del tipus yy.\+mm.\+dd.
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data completa en string \char`\"{}dd.\+mm.\+yy\char`\"{}
+\end{DoxyPostcond}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data completa en string \char`\"{}yy.\+mm.\+dd\char`\"{} 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_a2ee21b1a870f7ca670e54cadeb0ee62d}{}\index{Rellotge@{Rellotge}!get\+Date\+And\+Time@{get\+Date\+And\+Time}}
+\index{get\+Date\+And\+Time@{get\+Date\+And\+Time}!Rellotge@{Rellotge}}
+\subsubsection[{get\+Date\+And\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::get\+Date\+And\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_a2ee21b1a870f7ca670e54cadeb0ee62d}
+
+
+Retorna una string del tipus dd.\+mm.\+yy hh\+:mm. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data completa en string \char`\"{}dd.\+mm.\+yy hh\+:mm\char`\"{} 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_af7a5cf18e7903db9fbaffe526fcf5a06}{}\index{Rellotge@{Rellotge}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Rellotge@{Rellotge}}
+\subsubsection[{get\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_af7a5cf18e7903db9fbaffe526fcf5a06}
+
+
+Retorna una string del tipus hh\+:mm. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna l\textquotesingle{}hora completa en string \char`\"{}hh\+:mm\char`\"{} 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_abd7aa59db639ffc1e29154ba8283d7ed}{}\index{Rellotge@{Rellotge}!print\+Date@{print\+Date}}
+\index{print\+Date@{print\+Date}!Rellotge@{Rellotge}}
+\subsubsection[{print\+Date}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::print\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_abd7aa59db639ffc1e29154ba8283d7ed}
+
+
+Mostra torna la data en el format correcte dd.\+mm.\+yy. 
+
+Escriu la data en format desijtat per l\textquotesingle{}usauri.
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+la funcio retorna l\textquotesingle{}string amb el format de data dd.\+mm.\+yy
+\end{DoxyPostcond}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data en format dd.\+mm.\+yy 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_abe2b43818a3c3283d499a4070efa6c7f}{}\index{Rellotge@{Rellotge}!print\+Date\+And\+Time@{print\+Date\+And\+Time}}
+\index{print\+Date\+And\+Time@{print\+Date\+And\+Time}!Rellotge@{Rellotge}}
+\subsubsection[{print\+Date\+And\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::print\+Date\+And\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_abe2b43818a3c3283d499a4070efa6c7f}
+
+
+Escriu la data en format desitjat per l\textquotesingle{}usuari. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data completa en string \char`\"{}dd.\+mm.\+yy hh\+:mm\char`\"{} 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_a199013b85b09d5de7abae60c7de1750c}{}\index{Rellotge@{Rellotge}!roll\+Back@{roll\+Back}}
+\index{roll\+Back@{roll\+Back}!Rellotge@{Rellotge}}
+\subsubsection[{roll\+Back}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::roll\+Back (
+\begin{DoxyParamCaption}
+\item[{string}]{date}
+\end{DoxyParamCaption}
+)}\label{class_rellotge_a199013b85b09d5de7abae60c7de1750c}
+
+
+camiba yy $<$-\/$>$ dd sobre el string. 
+
+\begin{DoxyPrecond}{Precondición}
+El fotmat de data es\+: dd.\+mm.\+yy or yy.\+mm.\+dd 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna l\textquotesingle{}invers del dels pre dd $<$-\/$>$ yy el \mbox{[}.mm.\mbox{]} es mante estatic
+\end{DoxyPostcond}
+\begin{DoxyPrecond}{Precondición}
+El fotmat de data es\+: \char`\"{}dd.\+mm.\+yy\char`\"{} or \char`\"{}yy.\+mm.\+dd\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna l\textquotesingle{}invers del dels pre dd $<$-\/$>$ yy el \mbox{[}.mm.\mbox{]} es mante estatic 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_a19fc5ccb1b3949979f03f207f877c059}{}\index{Rellotge@{Rellotge}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!Rellotge@{Rellotge}}
+\subsubsection[{set\+Date}]{\setlength{\rightskip}{0pt plus 5cm}void Rellotge\+::set\+Date (
+\begin{DoxyParamCaption}
+\item[{string}]{date}
+\end{DoxyParamCaption}
+)}\label{class_rellotge_a19fc5ccb1b3949979f03f207f877c059}
+
+
+actualitza la data del sistema amb l\textquotesingle{}obtinguda 
+
+\begin{DoxyPrecond}{Precondición}
+el format de la data es correcte 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+si data\+In $>$= data\+Actual el rellotge s\textquotesingle{}actualitza amb la nova data. 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_a8b4ddc7c6b02397c415a2f0ca815dc04}{}\index{Rellotge@{Rellotge}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Rellotge@{Rellotge}}
+\subsubsection[{set\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Rellotge\+::set\+Time (
+\begin{DoxyParamCaption}
+\item[{string}]{hora}
+\end{DoxyParamCaption}
+)}\label{class_rellotge_a8b4ddc7c6b02397c415a2f0ca815dc04}
+
+
+actualitza la hora del sistema amb l\textquotesingle{}obtinguda 
+
+\begin{DoxyPrecond}{Precondición}
+el formata de l\textquotesingle{}hora es correcte. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+si hora\+I\+N $>$= hora\+Actual del rellotge s\textquotesingle{}actualitza amb la nova data. 
+\end{DoxyPostcond}
+\hypertarget{class_rellotge_a418c7be8bf66f6e27291d6b77dcd969f}{}\index{Rellotge@{Rellotge}!set\+Time\+And\+Date@{set\+Time\+And\+Date}}
+\index{set\+Time\+And\+Date@{set\+Time\+And\+Date}!Rellotge@{Rellotge}}
+\subsubsection[{set\+Time\+And\+Date}]{\setlength{\rightskip}{0pt plus 5cm}void Rellotge\+::set\+Time\+And\+Date (
+\begin{DoxyParamCaption}
+\item[{string}]{date, }
+\item[{string}]{hora}
+\end{DoxyParamCaption}
+)}\label{class_rellotge_a418c7be8bf66f6e27291d6b77dcd969f}
+
+
+Actualitza la data del sistema amb l\textquotesingle{}obtinguda. 
+
+\begin{DoxyPrecond}{Precondición}
+El format de la data completa es correcte. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si la data $>$= data\+Actual $\vert$$\vert$ data=data\+Actual \&\& hora $>$= hora\+Actual, l\textquotesingle{}actualiza amb la nova data completa 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_rellotge_8hh}{Rellotge.\+hh}\item 
+src/\hyperlink{_rellotge_8cc}{Rellotge.\+cc}\end{DoxyCompactItemize}

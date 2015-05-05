@@ -1,0 +1,24 @@
+
+
+Es decideix a treballar amb les següents classes:
+
+Rellotge
+Event
+Agenda
+Tag //not implemented yet :3
+
+Treballant en termes d'eficiencia l'agenda constarà d'un map key -> Rellotge, valor->Event
+
+Cristian:
+
+--> implementació main -> menu();
+
+
+Dru:
+
+--> Acabar la classe rellotge [voltejar yy.dd] {FET}
+--> Implementar funcions bàsiques d'agenda. 
+[add event], 
+[del event], 
+[mod titol], 
+[mod tags].
