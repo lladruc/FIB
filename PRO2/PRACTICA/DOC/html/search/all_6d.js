@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cc']]],
-  ['main_2ecc',['main.cc',['../main_8cc.html',1,'']]],
-  ['menu',['menu',['../main_8cc.html#a81b3ecc862f6ffa38e105614d2aaad55',1,'main.cc']]]
+  ['matchregularexpresion',['matchRegularExpresion',['../class_tag.html#afe9f536d194f4ae82a61f605cfd5b3b3',1,'Tag']]],
+  ['matchtag',['matchTag',['../class_tag.html#ae2b54f8096632f04635140b36e808821',1,'Tag']]],
+  ['matchtags',['matchTags',['../class_tag.html#abd2e470058c7f10cb56a4eb392311d20',1,'Tag']]],
+  ['modevent',['modEvent',['../class_agenda.html#abd4b2a2bb44123f0dafdf9d998503ef6',1,'Agenda']]]
 ];

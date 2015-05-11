@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Lab Pro2 [PRACTICA]
-   &#160;<span id="projectnumber">0.0.1:0001</span>
+   &#160;<span id="projectnumber">0.0.2:0001</span>
    </div>
   </td>
  </tr>
@@ -97,9 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:aa37d3f6b20a3ba3d174962b8cb76b64e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa37d3f6b20a3ba3d174962b8cb76b64e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (string titol, stack&lt; string &gt; tags)</td></tr>
-<tr class="separator:aa37d3f6b20a3ba3d174962b8cb76b64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf070291c8f16b4fb208ff747461c4ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf070291c8f16b4fb208ff747461c4ec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (string titol, stack&lt; string &gt; nTags)</td></tr>
+<tr class="separator:abf070291c8f16b4fb208ff747461c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a674a90725e7589757e98de7f109243"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a5a674a90725e7589757e98de7f109243">getTitol</a> () const </td></tr>
 <tr class="memdesc:a5a674a90725e7589757e98de7f109243"><td class="mdescLeft">&#160;</td><td class="mdescRight">retorna el titol de l'event.  <a href="#a5a674a90725e7589757e98de7f109243">Más...</a><br /></td></tr>
 <tr class="separator:a5a674a90725e7589757e98de7f109243"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,6 +112,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a3f8e092c3f470034b0ae8273d8ec5cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a3f8e092c3f470034b0ae8273d8ec5cbb">setTags</a> (stack&lt; string &gt; tags)</td></tr>
 <tr class="memdesc:a3f8e092c3f470034b0ae8273d8ec5cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigna un nou tag a l'event.  <a href="#a3f8e092c3f470034b0ae8273d8ec5cbb">Más...</a><br /></td></tr>
 <tr class="separator:a3f8e092c3f470034b0ae8273d8ec5cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4262e77c2021435ab9f9535f0008c593"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a4262e77c2021435ab9f9535f0008c593">sRe</a> (string &amp;s) const </td></tr>
+<tr class="memdesc:a4262e77c2021435ab9f9535f0008c593"><td class="mdescLeft">&#160;</td><td class="mdescRight">busqueda d'una expresio regular de tags  <a href="#a4262e77c2021435ab9f9535f0008c593">Más...</a><br /></td></tr>
+<tr class="separator:a4262e77c2021435ab9f9535f0008c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd83fe91f68446aee88fd69bd9ee388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a7bd83fe91f68446aee88fd69bd9ee388">delTag</a> (stack&lt; string &gt; tags)</td></tr>
 <tr class="memdesc:a7bd83fe91f68446aee88fd69bd9ee388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metode d'esborrat de tags de l'event.  <a href="#a7bd83fe91f68446aee88fd69bd9ee388">Más...</a><br /></td></tr>
 <tr class="separator:a7bd83fe91f68446aee88fd69bd9ee388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,13 +242,34 @@ Métodos públicos</h2></td></tr>
 
 </div>
 </div>
-<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<a class="anchor" id="a4262e77c2021435ab9f9535f0008c593"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Event::sRe </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>busqueda d'una expresio regular de tags </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna si l'event de l'agenda compleix la expresio regular </dd></dl>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
 <li>src/<a class="el" href="_event_8hh_source.html">Event.hh</a></li>
+<li>src/<a class="el" href="_event_8cc.html">Event.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Lunes, 4 de Mayo de 2015 12:23:51 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Jueves, 7 de Mayo de 2015 14:02:57 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

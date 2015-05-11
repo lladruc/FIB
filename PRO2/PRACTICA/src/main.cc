@@ -1,8 +1,13 @@
 #include <iostream>
-#include <vector> // -> rly don't necessary.
+#include <vector>
 #include <list>
 #include <stack>
+#include <map>
+#include <set>
+#include "Agenda.hh"
 #include "Comanda.hh"
+#include "token.hh"
+#include "Event.hh"
 #include "Rellotge.hh"
 #include "Tag.hh"
 
@@ -12,7 +17,7 @@ using namespace std;
     \Pre La comanda conté la ordre entrada per consola
     \Post 
  */
-void menu(Comanda& c, Agenda& a, vector<string>& v) {
+void menu(Comanda& c, Agenda& a, vector<Rellotge>& v) {
     stack<string> tags;
     if (c.es_rellotge()) { // vol modificar el rellotge
         //case "consulta" ?
@@ -21,26 +26,26 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
             a.getClock().printDateAndTime();
 
         } else {//modificar el rellotge
-            Rellotge raux;            
+            Rellotge rAux;            
 	    if (c.nombre_dates() == 1 and c.te_hora()) { // hi ha hora i data
             
-                raux.setTimeAndDate(c.data(1), c.hora());
+                rAux.setTimeAndDate(c.data(1), c.hora());
 
             } else if (c.te_hora()) {// hi ha hora
 
-                raux.setTime(c.hora());
+                rAux.setTime(c.hora());
 
             } else if (c.nombre_dates() == 1) { // hi ha data
 
-                raux.setDate(c.data(1));
+                rAux.setDate(c.data(1));
 		
             }
             
-            if(a.getClock().getDate() < raux.getDate() ){
-	       a.setClock(raux);
-	    }else if(a.getClock().getDate() == raux.getDate()){
-	        if(a.getClock().getTime() < raux.getTime()){
-		  a.setClock(raux);
+            if(a.getClock().getDate() < rAux.getDate() ){
+	       a.setClock(rAux);
+	    }else if(a.getClock().getDate() == rAux.getDate()){
+	        if(a.getClock().getTime() < rAux.getTime()){
+		  a.setClock(rAux);
 		}
 	    }
         }
@@ -55,12 +60,12 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
 
         if (c.es_consulta()) {
 	  
-            Rellotge rAuxIni();
-	    Rellotge rAuxEnd();
+            Rellotge rAuxIni;
+	        Rellotge rAuxEnd = a.getLast();
 	      
             if (c.es_passat()) { //cerca elements inmediatament inferiors al present.
 	      
-	        listMatchEvents(c.expressio(), v, rAuxIni,  a.getClock()); 
+	        a.listMatchEvents(c.expressio(), v, rAuxIni,  a.getClock()); 
                 
             } else { //cerca present i events futurs
 
@@ -68,19 +73,19 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
 
 		    if (c.te_expressio()) { // cerca segons la expressio
 		      
-			listMatchEvents(c.expressio(), v, rAuxIni,  rAuxEnd());     
+			a.listMatchEvents(c.expressio(), v, a.getClock(),  rAuxEnd);     
 		      
 		    }
 		  
 		} else if (c.nombre_dates() == 1) {
                     rAuxIni.setDate(c.data(1));
-		    rAuxEnd.setDate(c.data(1));
-		    rAuxEnd.setTime("00:00");
-                    listMatchEvents(c.expressio(), v, rAuxIni, rAuxEnd); 
+		            rAuxEnd.setDate(c.data(1));
+		            rAuxEnd.setTime("00:00");
+                    a.listMatchEvents(c.expressio(), v, rAuxIni, rAuxEnd); 
 
                 } else if (c.nombre_dates() == 2) {
                    rAuxEnd = a.getLast();
-		   listMatchEvents(c.expressio(), v, rAuxIni, rAuxEnd);
+		   a.listMatchEvents(c.expressio(), v, rAuxIni, rAuxEnd);
 		   
                 }
 
@@ -88,17 +93,17 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
             //case "add" +
         } else if (c.es_insercio()) {
 
-            v = new vector<string>(0);
+            v = vector<Rellotge>();
 
             if (c.te_titol() and c.te_hora()) {
 
 
                 if (c.nombre_dates() == 0) { // aqui la data es posara per defecte (la del rellotge)
 
-                    addEvent(c.titol(), a.printdate(), c.hora(), tags); 
+                    a.addEvent(c.titol(), a.getClock().printDate(), c.hora(), tags); 
 
                 } else if (c.nombre_dates() == 1) {
-                    addEvent(c.titol(), c.data(), c.hora(), tags);
+                    a.addEvent(c.titol(), c.data(1), c.hora(), tags);
                 }
 
             }
@@ -106,17 +111,17 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
 
         } else if (c.es_modificacio()) { //case "mod"
                                    
-	   if( v.size() < c.tasca()-1){
-	   String Titol = "";
-	   Rellotge rAux(v[c.tasca()-1].getDate,v[c.tasca()-1]);
+	   if( v.size() > c.tasca()-1){
+	   string Titol = "";
+	   Rellotge rAux(v[c.tasca()-1].printDate(),v[c.tasca()-1].getTime());
 	  
 	   if(c.te_titol()) Titol= c.titol();
 	   
-	   if(c.te_hora()) rAux.setTime(c.hora())
+	   if(c.te_hora()) rAux.setTime(c.hora());
 	   
 	   if(c.nombre_dates() == 1) rAux.setDate(c.data(1));
 	   
-	   a.modEvent(v[tasca()-1], rAux.printDate,raux.printTime(),tags);
+	   a.modEvent(v[c.tasca()-1], Titol, rAux.printDate(),rAux.getTime(),tags);
 	   }else{
 	     cout << "No s'ha realitzat." << endl;
 	   }
@@ -124,16 +129,16 @@ void menu(Comanda& c, Agenda& a, vector<string>& v) {
         } else if (c.es_esborrat()) { //case "del" -
 
             if (c.tipus_esborrat() == "etiqueta") { 
-
-                v[c.tasca()-1].delTags(tags); 
+                // Dru rules
+                //v[c.tasca()-1].delTags(tags); 
 
             } else if ((c.tipus_esborrat() == "etiquetes")) {
-
-                v[c.tasca()-1].Tag(); 
+                // Dru rules
+                //v[c.tasca()-1].Tag(); 
 
             } else if ((c.tipus_esborrat() == "tasca")) {
-
-                a.delEvent(v[c.tasca()-1]);  
+                Rellotge rAux(v[c.tasca()-1].printDate(),v[c.tasca()-1].getTime());
+                a.delEvent(rAux);  
 
             }
         }
@@ -149,7 +154,7 @@ int main() {
     vector<Rellotge> v;
     // bucle lectura dades
     bool be = false;
-    while (c.llegir(be)) {
-        if (be) menu(c, a, v, r)
-        }
+    while (c.llegir(be)){
+        if(be) menu(c, a, v);
+    }
 }

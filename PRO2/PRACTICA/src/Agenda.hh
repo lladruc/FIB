@@ -6,7 +6,18 @@
 #ifndef AGENDA_HH
 #define AGENDA_HH
 
-typedef map<Rellotge,Event>::iterator Rellotge;
+#include <iostream>
+#include <map>
+#include <string>
+#include <list>
+#include <vector>
+#include "Rellotge.hh"
+#include "Tag.hh"
+#include "Event.hh"
+
+using namespace std;
+
+typedef map<Rellotge,Event>::iterator evIt;
 /** @class Agenda
  *  @brief Conte el conjunt 
  */
@@ -22,7 +33,7 @@ public:
   Agenda(); 
   
   // Destructora
-  ~Agenda();
+  //~Agenda();
   
   //Consultores
   
@@ -48,20 +59,20 @@ public:
       \pre Cert
       \post String conté "dd.mm.yy hh:mm titol #tag1 #tag2 #tagN"
   */
-  string Agenda::print() const;
+  string escriure(const pair<Rellotge,Event>& e) const;
 
   /** @brief Metode de consulta per expresió regular
       \pre Vector v is "empty"
       \post v conte els elements que coincideixen en l'expresio regular
   */
-  void listMatchEvents(string& tags,vector<string>& v, Rellotge ini, Rellotge end);
+  void listMatchEvents(string hashtags,vector<Rellotge>& v, Rellotge ini, Rellotge end);
 
   /** @brief Metode de consulta generic en funció de dates, present o futur.
       \pre data inicial o data final no son buits
       \pre les dates compleixen el format dd.mm.yy [on Rellotge use method printDate and printHour];
       \post Vector v conte els elements que coincideixen en l'expresio regular
   */
-  void search(vector<string>& v, string ini, string end);
+  void search(vector<Rellotge>& v, string ini, string end);
   
   /** @brief Metode de consulta del rellotge
       \pre Cert
@@ -79,7 +90,7 @@ public:
       \pre nuevo != null
       \post s'ha modificar el rellotge
   */
-  void setRellotge(Rellotge& nuevo);
+  void setClock(Rellotge& nuevo);
 };
 
 #endif

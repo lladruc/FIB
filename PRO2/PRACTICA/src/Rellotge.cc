@@ -3,8 +3,9 @@
 
 *  @brief Controla el pas del temps actualitzable per l'usuari. Aquest s'inicialitza a 20.04.15 00:00
 */
-using namespace std;
+#include <iostream>
 #include <string>
+using namespace std;
 #include "rellotge.hh"
 // Constructora
 Rellotge::Rellotge(){
@@ -25,12 +26,12 @@ Rellotge::Rellotge(string date, string hora){
 
 /** @override  
 */
- bool operator < (const Rellotge& r) {
-  if(this.date != r.getDate()){ //comprobat dates
-    if(this.date < r.getDate()) return true;
+ bool Rellotge::operator<(const Rellotge& r) const{
+  if(this->date != r.date){ //comprobat dates
+    if(this->date < r.date) return true;
     return false;
   }else{ // mateixa data
-    if(this.hora < r.getTime()) return true;
+    if(this->hora < r.hora) return true;
     return false;
   }
 }
@@ -83,7 +84,7 @@ string Rellotge::printDate() const{
 */
 void Rellotge::setDate(string date){
   Rellotge aux(date,"00:00");
-  if(this < aux) this->date = aux.date;
+  if((*this) < aux) this->date = aux.date;
   else cout << "No s'ha realitzat." << endl;
 }
 
@@ -93,7 +94,7 @@ void Rellotge::setDate(string date){
 */
 void Rellotge::setTime(string hora){
   Rellotge aux(this->date,hora);
-  if(this < aux) this->hora = aux.hora;
+  if((*this) < aux) this->hora = aux.hora;
   else cout << "No s'ha realitzat." << endl;
 }
 
@@ -103,7 +104,7 @@ void Rellotge::setTime(string hora){
 */
 void Rellotge::setTimeAndDate(string date, string hora){
   Rellotge aux(date,hora);
-  if(aux < ) this->date = date , this->hora = hora;
+  if((*this) < aux ) this->date = date , this->hora = hora;
   else cout << "No s'ha realitzat." << endl;  
 }
 
@@ -112,5 +113,8 @@ void Rellotge::setTimeAndDate(string date, string hora){
     \post retorna l'invers del dels pre dd <-> yy  el [.mm.] es mante estatic
 */
 string Rellotge::rollBack(string date) const{
-  return date[6]+date[7]+"."+date[3]+date[4]+"."+date[0]+date[1];
+  string aux = date.substr(6,2);
+  aux += "." + date.substr(3,3);
+  aux += date.substr(0,2);
+  return aux;
 }

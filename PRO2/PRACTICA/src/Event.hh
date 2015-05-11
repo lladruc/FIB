@@ -17,9 +17,9 @@ public:
     //Constructora per defecte
     Event();
     //Constructora custom
-    Event(string titol,stack<string> tags);
+    Event(string titol,stack<string> nTags);
     //Destructora
-    ~Event();
+    //~Event();
 
     /** @brief retorna el titol de l'event.
     	\pre Cert
@@ -44,6 +44,12 @@ public:
     	\post Tags incloura el nou tag
     */
     void setTags(stack<string> tags);
+
+    /** @brief busqueda d'una expresio regular de tags
+        \pre Cert
+        \post Retorna si l'event de l'agenda compleix la expresio regular
+    */
+    bool sRe(string& s)const;
 
     /** @brief Metode d'esborrat de tags de l'event
     	\pre Cert

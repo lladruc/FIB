@@ -7,6 +7,7 @@
 #define RELLOTGE_HH
 #include <string>
 #include <iostream>
+using namespace std;
 /** @class Rellotge
 *  @brief Controla el pas del temps actualitzable per l'usuari. Aquest s'inicialitza a 20.04.15 00:00
 */
@@ -20,7 +21,7 @@ class Rellotge{
   Rellotge(string date, string hora);
   bool operator<(const Rellotge& r) const;
   // Destructora
-  ~Rellotge();
+  //~Rellotge();
 
   //Consultores
 

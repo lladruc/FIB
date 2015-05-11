@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printtimeanddate',['printTimeAndDate',['../class_rellotge.html#ad730529ce5b30ec0e410ffe728d12803',1,'Rellotge']]]
+  ['printdate',['printDate',['../class_rellotge.html#abd7aa59db639ffc1e29154ba8283d7ed',1,'Rellotge']]],
+  ['printdateandtime',['printDateAndTime',['../class_rellotge.html#abe2b43818a3c3283d499a4070efa6c7f',1,'Rellotge']]]
 ];

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Lab Pro2 [PRACTICA]
-   &#160;<span id="projectnumber">0.0.1:0001</span>
+   &#160;<span id="projectnumber">0.0.2:0001</span>
    </div>
   </td>
  </tr>
@@ -100,8 +100,7 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a32a5ede4b39b3dfc22a10d93a68d4173"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#a32a5ede4b39b3dfc22a10d93a68d4173">Rellotge</a> (string date, string hora)</td></tr>
 <tr class="memdesc:a32a5ede4b39b3dfc22a10d93a68d4173"><td class="mdescLeft">&#160;</td><td class="mdescRight">CONSTRUCTORA RECOMANADA.  <a href="#a32a5ede4b39b3dfc22a10d93a68d4173">Más...</a><br /></td></tr>
 <tr class="separator:a32a5ede4b39b3dfc22a10d93a68d4173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec4d03763b1bfed2821e2df4a3923b19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec4d03763b1bfed2821e2df4a3923b19"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_rellotge.html">Rellotge</a> &amp;r) const </td></tr>
+<tr class="memitem:aec4d03763b1bfed2821e2df4a3923b19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#aec4d03763b1bfed2821e2df4a3923b19">operator&lt;</a> (const <a class="el" href="class_rellotge.html">Rellotge</a> &amp;r) const </td></tr>
 <tr class="separator:aec4d03763b1bfed2821e2df4a3923b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addfca1622b9aeba2cdff685060871153"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#addfca1622b9aeba2cdff685060871153">getDate</a> () const </td></tr>
 <tr class="memdesc:addfca1622b9aeba2cdff685060871153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un string del tipus dd.mm.yy.  <a href="#addfca1622b9aeba2cdff685060871153">Más...</a><br /></td></tr>
@@ -127,9 +126,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 <tr class="memitem:abd7aa59db639ffc1e29154ba8283d7ed"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#abd7aa59db639ffc1e29154ba8283d7ed">printDate</a> () const </td></tr>
 <tr class="memdesc:abd7aa59db639ffc1e29154ba8283d7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra torna la data en el format correcte dd.mm.yy.  <a href="#abd7aa59db639ffc1e29154ba8283d7ed">Más...</a><br /></td></tr>
 <tr class="separator:abd7aa59db639ffc1e29154ba8283d7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199013b85b09d5de7abae60c7de1750c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#a199013b85b09d5de7abae60c7de1750c">rollBack</a> (string date)</td></tr>
-<tr class="memdesc:a199013b85b09d5de7abae60c7de1750c"><td class="mdescLeft">&#160;</td><td class="mdescRight">camiba yy &lt;-&gt; dd sobre el string.  <a href="#a199013b85b09d5de7abae60c7de1750c">Más...</a><br /></td></tr>
-<tr class="separator:a199013b85b09d5de7abae60c7de1750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bce0def81a1b01aae191ac678bf4473"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rellotge.html#a8bce0def81a1b01aae191ac678bf4473">rollBack</a> (string date) const </td></tr>
+<tr class="memdesc:a8bce0def81a1b01aae191ac678bf4473"><td class="mdescLeft">&#160;</td><td class="mdescRight">camiba yy &lt;-&gt; dd sobre el string.  <a href="#a8bce0def81a1b01aae191ac678bf4473">Más...</a><br /></td></tr>
+<tr class="separator:a8bce0def81a1b01aae191ac678bf4473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Controla el pas del temps actualitzable per l'usuari. Aquest s'inicialitza a 20.04.15 00:00. </p>
@@ -201,8 +200,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 </div><div class="memdoc">
 
 <p>Retorna una string del tipus dd.mm.yy hh:mm. </p>
+<p>Retorna una string del tipus yy.mm.dd hh:mm.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Retorna la data completa en string "dd.mm.yy hh:mm" </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna la data completa en string "dd.mm.yy hh:mm"</dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna la data completa en string "yy.mm.dd hh:mm" </dd></dl>
 
 </div>
 </div>
@@ -222,6 +224,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 <p>Retorna una string del tipus hh:mm. </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna l'hora completa en string "hh:mm" </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec4d03763b1bfed2821e2df4a3923b19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Rellotge::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rellotge.html">Rellotge</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -261,12 +279,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 </div><div class="memdoc">
 
 <p>Escriu la data en format desitjat per l'usuari. </p>
+<p>Escriu la data i hora en format desitjat per l'usuari.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna la data completa en string "dd.mm.yy hh:mm" </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a199013b85b09d5de7abae60c7de1750c"></a>
+<a class="anchor" id="a8bce0def81a1b01aae191ac678bf4473"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -275,7 +294,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>date</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -365,7 +384,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Lunes, 4 de Mayo de 2015 12:23:51 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Jueves, 7 de Mayo de 2015 14:02:57 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

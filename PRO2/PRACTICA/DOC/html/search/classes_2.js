@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rellotge',['Rellotge',['../class_rellotge.html',1,'']]]
+  ['event',['Event',['../class_event.html',1,'']]]
 ];

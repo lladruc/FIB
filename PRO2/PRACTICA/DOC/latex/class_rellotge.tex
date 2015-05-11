@@ -14,8 +14,7 @@ Controla el pas del temps actualitzable per l\textquotesingle{}usuari. Aquest s\
 \item 
 \hyperlink{class_rellotge_a32a5ede4b39b3dfc22a10d93a68d4173}{Rellotge} (string date, string hora)
 \begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R\+A R\+E\+C\+O\+M\+A\+N\+A\+D\+A. \end{DoxyCompactList}\item 
-\hypertarget{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}{}bool {\bfseries operator$<$} (const \hyperlink{class_rellotge}{Rellotge} \&r) const \label{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}
-
+bool \hyperlink{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}{operator$<$} (const \hyperlink{class_rellotge}{Rellotge} \&r) const 
 \item 
 string \hyperlink{class_rellotge_addfca1622b9aeba2cdff685060871153}{get\+Date} () const 
 \begin{DoxyCompactList}\small\item\em Retorna un string del tipus dd.\+mm.\+yy. \end{DoxyCompactList}\item 
@@ -33,7 +32,7 @@ void \hyperlink{class_rellotge_a418c7be8bf66f6e27291d6b77dcd969f}{set\+Time\+And
 \begin{DoxyCompactList}\small\item\em Actualitza la data del sistema amb l\textquotesingle{}obtinguda. \end{DoxyCompactList}\item 
 string \hyperlink{class_rellotge_abd7aa59db639ffc1e29154ba8283d7ed}{print\+Date} () const 
 \begin{DoxyCompactList}\small\item\em Mostra torna la data en el format correcte dd.\+mm.\+yy. \end{DoxyCompactList}\item 
-string \hyperlink{class_rellotge_a199013b85b09d5de7abae60c7de1750c}{roll\+Back} (string date)
+string \hyperlink{class_rellotge_a8bce0def81a1b01aae191ac678bf4473}{roll\+Back} (string date) const 
 \begin{DoxyCompactList}\small\item\em camiba yy $<$-\/$>$ dd sobre el string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -98,11 +97,19 @@ Retorna la data completa en string \char`\"{}yy.\+mm.\+dd\char`\"{}
 
 Retorna una string del tipus dd.\+mm.\+yy hh\+:mm. 
 
+Retorna una string del tipus yy.\+mm.\+dd hh\+:mm.
+
 \begin{DoxyPrecond}{Precondición}
 Cert 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Retorna la data completa en string \char`\"{}dd.\+mm.\+yy hh\+:mm\char`\"{} 
+Retorna la data completa en string \char`\"{}dd.\+mm.\+yy hh\+:mm\char`\"{}
+\end{DoxyPostcond}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la data completa en string \char`\"{}yy.\+mm.\+dd hh\+:mm\char`\"{} 
 \end{DoxyPostcond}
 \hypertarget{class_rellotge_af7a5cf18e7903db9fbaffe526fcf5a06}{}\index{Rellotge@{Rellotge}!get\+Time@{get\+Time}}
 \index{get\+Time@{get\+Time}!Rellotge@{Rellotge}}
@@ -121,6 +128,13 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 Retorna l\textquotesingle{}hora completa en string \char`\"{}hh\+:mm\char`\"{} 
 \end{DoxyPostcond}
+\hypertarget{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}{}\index{Rellotge@{Rellotge}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Rellotge@{Rellotge}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Rellotge\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rellotge} \&}]{r}
+\end{DoxyParamCaption}
+) const}\label{class_rellotge_aec4d03763b1bfed2821e2df4a3923b19}
 \hypertarget{class_rellotge_abd7aa59db639ffc1e29154ba8283d7ed}{}\index{Rellotge@{Rellotge}!print\+Date@{print\+Date}}
 \index{print\+Date@{print\+Date}!Rellotge@{Rellotge}}
 \subsubsection[{print\+Date}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::print\+Date (
@@ -157,19 +171,21 @@ Retorna la data en format dd.\+mm.\+yy
 
 Escriu la data en format desitjat per l\textquotesingle{}usuari. 
 
+Escriu la data i hora en format desitjat per l\textquotesingle{}usuari.
+
 \begin{DoxyPrecond}{Precondición}
 Cert 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 Retorna la data completa en string \char`\"{}dd.\+mm.\+yy hh\+:mm\char`\"{} 
 \end{DoxyPostcond}
-\hypertarget{class_rellotge_a199013b85b09d5de7abae60c7de1750c}{}\index{Rellotge@{Rellotge}!roll\+Back@{roll\+Back}}
+\hypertarget{class_rellotge_a8bce0def81a1b01aae191ac678bf4473}{}\index{Rellotge@{Rellotge}!roll\+Back@{roll\+Back}}
 \index{roll\+Back@{roll\+Back}!Rellotge@{Rellotge}}
 \subsubsection[{roll\+Back}]{\setlength{\rightskip}{0pt plus 5cm}string Rellotge\+::roll\+Back (
 \begin{DoxyParamCaption}
 \item[{string}]{date}
 \end{DoxyParamCaption}
-)}\label{class_rellotge_a199013b85b09d5de7abae60c7de1750c}
+) const}\label{class_rellotge_a8bce0def81a1b01aae191ac678bf4473}
 
 
 camiba yy $<$-\/$>$ dd sobre el string. 

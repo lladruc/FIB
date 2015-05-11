@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tag',['Tag',['../class_tag.html',1,'']]]
+  ['rellotge',['Rellotge',['../class_rellotge.html',1,'']]]
 ];
