@@ -4,6 +4,10 @@
 #ifndef EVENT_HH
 #define EVENT_HH
 
+#include <iostream>
+#include <string>
+#include <stack>
+#include "tag.hh"
 /** @class Event
 	@brief Conté un únic event
  */
@@ -11,7 +15,7 @@
 class Event{
 private:
     string titol;
-    Tag tags;
+    Tag tagList;
     //array tags; // hay que perfilar esto ._.¡
 public:
     //Constructora per defecte
@@ -43,7 +47,7 @@ public:
     	\pre Cert
     	\post Tags incloura el nou tag
     */
-    void setTags(stack<string> tags);
+    void setTags(stack<string>& tags);
 
     /** @brief busqueda d'una expresio regular de tags
         \pre Cert
@@ -55,7 +59,7 @@ public:
     	\pre Cert
     	\post tags conte tots els tags menys els rebuts
     */
-    void delTag(stack<string> tags);
+    void delTag(string& tags);
 
     /** @brief esborra tots els tags [mes rapid que delTag [nomes per esborrar tots]]
     	\pre Cert

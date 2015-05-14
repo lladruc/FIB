@@ -3,9 +3,6 @@
 
 *  @brief Controla el pas del temps actualitzable per l'usuari. Aquest s'inicialitza a 20.04.15 00:00
 */
-#include <iostream>
-#include <string>
-using namespace std;
 #include "rellotge.hh"
 // Constructora
 Rellotge::Rellotge(){
@@ -104,7 +101,7 @@ void Rellotge::setTime(string hora){
 */
 void Rellotge::setTimeAndDate(string date, string hora){
   Rellotge aux(date,hora);
-  if((*this) < aux ) this->date = date , this->hora = hora;
+  if((*this) < aux ) (*this) = aux;
   else cout << "No s'ha realitzat." << endl;  
 }
 

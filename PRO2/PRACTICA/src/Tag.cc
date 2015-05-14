@@ -2,12 +2,7 @@
  *  @brief Classe Tag
  */
 
- #include <iostream>
- #include <string>
- #include <set>
- #include <stack>
  #include "Tag.hh"
- using namespace std;
 
 //DEPRECATED
 /** @brief: lIt es una lista de iteradores de los eventos de Agenda
@@ -15,7 +10,7 @@
 //typedef list<list<Events>::iterator> lIt;
 //DEPRECATED
 
- typedef set<string>::iterator itTag;
+ typedef set<string>::const_iterator itTag;
 
   // Constructora
   Tag::Tag(){
@@ -40,10 +35,9 @@
    * \post agrega els tags nous (ignora els que ja hi son)
    */
   void Tag::addTags(stack<string>& nTags){
-    itTag p;
     while(not nTags.empty()){
       string aux = nTags.top();
-      if(not matchTag(aux,p)) tags.insert(aux);
+      if(not matchTag(aux).first) tags.insert(aux);
       nTags.pop();
     }
   }
@@ -52,31 +46,38 @@
       \pre Cert
       \post Si el tag existeix, l'esborra.
   */
-  void Tag::delTags(stack<string>& delTags){
-    while(not delTags.empty()){
-      itTag p;
-      string aux = delTags.top();
-      if(matchTag(aux,p)) tags.erase(p);
-      delTags.pop();
-    }
+  void Tag::delTags(string& delTag){
+    pair<bool,itTag> n = matchTag(delTag);
+    if(n.first) tags.erase(n.second);
+    else cout << "No s'ha realitzat" << endl;
   }
 
-  bool Tag::matchRegularExpresion(string re){
-   return true; 
+  string Tag::getTags()const{
+    string aux;
+    itTag it = tags.begin();
+    if(it != tags.end()) aux += (*it);
+    ++it;
+    while(it != tags.end()) aux += " " + (*it);
+    return aux;
   }
 
-  bool Tag::matchTag(string tag,itTag& r){
-  r = tags.find(tag);
-  return (r != tags.end());
+  bool Tag::i_search(string& s)const{
+    //CODIGO OFUSCADO -- SE AÑADIRÁ PROXIMAMENTE
+    return true;
+  }
+
+  pair<bool,itTag> Tag::matchTag(string& tag)const {
+  itTag r = tags.find(tag);
+  return make_pair(r != tags.end(),r);
   }
 
 
-  bool Tag::matchTags(stack<string>& tags){
+  bool Tag::matchTags(stack<string>& tags)const{
+    if(tags.empty()) return false;
     bool match = true;
     while(not tags.empty() and match){
-      itTag p;
       string aux = tags.top();
-      match = matchTag(aux,p);
+      match = matchTag(aux).first;
     }
     return match;
   }

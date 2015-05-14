@@ -1,7 +1,9 @@
-main.exe: main.o rellotge.o tag.o event.o agenda.o comanda.o token.o
-	g++ -o main.exe main.o rellotge.o tag.o event.o agenda.o comanda.o token.o
+program.exe: program.o rellotge.o tag.o event.o agenda.o comanda.o token.o
+	g++ -o program.exe program.o rellotge.o tag.o event.o agenda.o comanda.o token.o
 
-#
+practica.tar:
+	tar -cvf practica.tar rellotge.cc rellotge.hh tag.cc tag.hh event.cc event.hh agenda.cc agenda.hh program.cc
+
 rellotge.o: Rellotge.cc Rellotge.hh
 	g++ -c Rellotge.cc -D_GLIBCXX_DEBUG
 
@@ -20,11 +22,14 @@ comanda.o: comanda.cc comanda.hh
 token.o: token.cc token.hh
 	g++ -c token.cc -D_GLIBCXX_DEBUG
 
+
+program.o: program.cc
+	g++ -c program.cc -D_GLIBCXX_DEBUG
+
+
 #empaquetar: Agenda.cc Agenda.hh Event.cc Event.hh Tag.cc tags.hh Rellotge.cc Rellotge.hh
 #	zip ENTREGA_NOMES_AQUEST.zip Agenda.cc Agenda.hh Event.cc Event.hh Tag.cc Tag.hh Rellotge.cc Rellotge.hh
 
-main.o: main.cc
-	g++ -c main.cc -D_GLIBCXX_DEBUG
 
 # Esta ultima opcion sirve para limpiar el directorio de ficheros 
 # innecesarios; se ejecuta mediante el comando "make clean"
@@ -32,4 +37,3 @@ main.o: main.cc
 clean:
 	rm *.o
 	rm *.exe
-

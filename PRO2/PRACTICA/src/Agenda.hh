@@ -27,6 +27,7 @@ class Agenda{
 private:
   Rellotge rTime;  //rTime short's realTime's name.
   map<Rellotge, Event> calendar;
+  vector<Rellotge> v;
   
 public: 
   // Constructora
@@ -65,32 +66,34 @@ public:
       \pre Vector v is "empty"
       \post v conte els elements que coincideixen en l'expresio regular
   */
-  void listMatchEvents(string hashtags,vector<Rellotge>& v, Rellotge ini, Rellotge end);
+  void listMatchEvents(string hashtags,Rellotge& ini, Rellotge& end);
 
   /** @brief Metode de consulta generic en funció de dates, present o futur.
       \pre data inicial o data final no son buits
       \pre les dates compleixen el format dd.mm.yy [on Rellotge use method printDate and printHour];
       \post Vector v conte els elements que coincideixen en l'expresio regular
   */
-  void search(vector<Rellotge>& v, string ini, string end);
+  void search(Rellotge& ini, Rellotge& end);
   
+  void delTag(Rellotge& key, string tag);
+
+
+  void delTags(Rellotge& key);
+
+
   /** @brief Metode de consulta del rellotge
       \pre Cert
       \post retorna el rellotge amb hora i data diferents de null
   */
   Rellotge getClock() const;
 
-  /** @brief Metode de consulta de la ultima data
-      \pre calendar != null
-      \post retorna la data futura mes llunyana
-  */
-  Rellotge getLast() const;
-
   /** @brief Metode per Modificar el rellotge
       \pre nuevo != null
       \post s'ha modificar el rellotge
   */
   void setClock(Rellotge& nuevo);
+
+  bool esBuit()const;
 };
 
 #endif

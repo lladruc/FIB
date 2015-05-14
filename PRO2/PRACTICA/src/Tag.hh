@@ -6,6 +6,8 @@
 #ifndef TAG_HH
 #define TAG_HH
 
+#include <iostream>
+#include <string>
 #include <set>
 #include <stack>
 using namespace std;
@@ -47,32 +49,28 @@ public:
       \pre Cert
       \post Si el tag existeix, l'esborra.
   */
-  void delTags(stack<string>& delTags);
+  void delTags(string& delTag);
 
+
+  string getTags()const;
 
    /** @brief Funció de busqueda d'inmersió.
       \pre 
       \post
   */
-  string inmersionSearch(pair<string,string>& s);
+  bool i_search(string& s)const;
 
   /** @brief
       \pre
       \post
   */
-  bool matchRegularExpresion(string re);
-
-  /** @brief
-      \pre
-      \post
-  */
-  bool matchTag(string tag,itTag& r);
+  pair<bool,itTag> matchTag(string& tag)const;
   
   /** @brief
       \pre
       \post
   */
-  bool matchTags(stack<string>& tags);
+  bool matchTags(stack<string>& tags)const;
 
 };
 
