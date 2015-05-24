@@ -11,9 +11,9 @@
 #include <string>
 #include <list>
 #include <vector>
-#include "Rellotge.hh"
-#include "Tag.hh"
-#include "Event.hh"
+#include "rellotge.hh"
+#include "tag.hh"
+#include "event.hh"
 
 using namespace std;
 
@@ -27,7 +27,7 @@ class Agenda{
 private:
   Rellotge rTime;  //rTime short's realTime's name.
   map<Rellotge, Event> calendar;
-  vector<Rellotge> v;
+  vector<pair<Rellotge,bool> > v;
   
 public: 
   // Constructora
@@ -48,13 +48,13 @@ public:
       \pre Almenys un dels camps no pot ser "empty"
       \post Si no viatja al passat, l'event s'ha modificat
   */
-  void modEvent(Rellotge key,string titol, string date, string hora, stack<string>& tags);
+  void modEvent(int i,Rellotge key,string titol, string date, string hora,stack<string>& tags);
   
   /** @brief Metode de borrat de l'event
       \pre Cert
       \post Agenda conte els events excepte el marcat pel rellotge
   */
-  void delEvent(Rellotge key);
+  void delEvent(Rellotge key, int i);
 
   /** @brief Metode de impresió d'un event
       \pre Cert
@@ -68,31 +68,70 @@ public:
   */
   void listMatchEvents(string hashtags,Rellotge& ini, Rellotge& end);
 
-  /** @brief Metode de consulta generic en funció de dates, present o futur.
-      \pre data inicial o data final no son buits
-      \pre les dates compleixen el format dd.mm.yy [on Rellotge use method printDate and printHour];
+  /** @brief Metode de consulta generic en funció de dates, passat.
+      \pre Data inicial o data final no son buits
+           Les dates compleixen el format dd.mm.yy 
+           [on Rellotge use method printDate and printHour];
       \post Vector v conte els elements que coincideixen en l'expresio regular
   */
-  void search(Rellotge& ini, Rellotge& end);
+  void pass_search(Rellotge ini, Rellotge& end,string& tag);
   
-  void delTag(Rellotge& key, string tag);
-
-
-  void delTags(Rellotge& key);
-
+  /** @brief Metode de consulta generic en funció de dates, present o futur.
+      \pre Data inicial o data final no son buits
+           Les dates compleixen el format dd.mm.yy 
+           [on Rellotge use method printDate and printHour];
+      \post Vector v conte els elements que coincideixen en l'expresio regular
+  */
+  void search(Rellotge ini, Rellotge& end,string& tag);
+  
+  /** @brief Metode per borrar un tag segons el rellotge
+      \pre key != NULL , tag != NULL
+      \post Elimina el tag del event amb aquest rellotge 
+            com identificador
+  */
+  void delTag(Rellotge key, string tag);
+  
+  /** @brief Metode per borrar tots els tags segons el rellotge
+      \pre key != NULL
+      \post Elimina tots els tag del event amb aquest rellotge 
+            com identificador
+  */
+  void delTags(Rellotge key);
 
   /** @brief Metode de consulta del rellotge
       \pre Cert
-      \post retorna el rellotge amb hora i data diferents de null
+      \post Retorna el rellotge amb hora i data diferents de null
   */
   Rellotge getClock() const;
 
   /** @brief Metode per Modificar el rellotge
-      \pre nuevo != null
-      \post s'ha modificar el rellotge
+      \pre Cert
+      \post Si nuevo es >= que rTime es modifica
   */
   void setClock(Rellotge& nuevo);
 
+  /** @brief Metode que retorna l'iesim rellotge del vector de rellotges
+      \pre Cert
+      \post Retorna el Rellotge de la iesima posició
+   */
+  Rellotge vRi(int i);
+
+  /** @brief Metode que si l'iesim event si existeix i no es passat
+      \pre Cert
+      \post Retorna true si existeix i no es passat
+   */
+  bool vRe(int i);
+
+  /** @brief Metode que retorna el tamany del vector de rellotges
+      \pre Cert
+      \post Retorna el tamany de vector de rellotges
+   */
+  int resultsSize();
+  
+  /** @brief Metode que indica si el calendar esta buit
+      \pre Cert
+      \post Retorna true si el calendar es buit 
+   */
   bool esBuit()const;
 };
 

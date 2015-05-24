@@ -93,48 +93,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef EVENT_HH</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define EVENT_HH</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_event.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_event.html">Event</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">string</span> titol;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_tag.html">Tag</a> tags;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//array tags; // hay que perfilar esto ._.¡</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//Constructora per defecte</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_event.html">Event</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//Constructora custom</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_event.html">Event</a>(<span class="keywordtype">string</span> titol,stack&lt;string&gt; nTags);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//Destructora</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//~Event();</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_event.html#a5a674a90725e7589757e98de7f109243">getTitol</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_event.html#ad17c21131ed964fc3498689e9f7413b4">getTags</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a16ed22cc72c0249ade170184f280a1d8">setTitol</a>(<span class="keywordtype">string</span> titol);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a3f8e092c3f470034b0ae8273d8ec5cbb">setTags</a>(stack&lt;string&gt; tags);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_event.html#a4262e77c2021435ab9f9535f0008c593">sRe</a>(<span class="keywordtype">string</span>&amp; s)<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a7bd83fe91f68446aee88fd69bd9ee388">delTag</a>(stack&lt;string&gt; tags);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a58e213ecfa7b2beedc275a2b4dc86eaf">delAllTags</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Conté un únic event. </div><div class="ttdef"><b>Definition:</b> Event.hh:11</div></div>
-<div class="ttc" id="class_event_html_a58e213ecfa7b2beedc275a2b4dc86eaf"><div class="ttname"><a href="class_event.html#a58e213ecfa7b2beedc275a2b4dc86eaf">Event::delAllTags</a></div><div class="ttdeci">void delAllTags()</div><div class="ttdoc">esborra tots els tags [mes rapid que delTag [nomes per esborrar tots]] </div><div class="ttdef"><b>Definition:</b> Event.cc:73</div></div>
-<div class="ttc" id="class_tag_html"><div class="ttname"><a href="class_tag.html">Tag</a></div><div class="ttdoc">Conte el conjunt. </div><div class="ttdef"><b>Definition:</b> Tag.hh:26</div></div>
-<div class="ttc" id="class_event_html_ad17c21131ed964fc3498689e9f7413b4"><div class="ttname"><a href="class_event.html#ad17c21131ed964fc3498689e9f7413b4">Event::getTags</a></div><div class="ttdeci">string getTags() const </div><div class="ttdoc">Retorna un string amb tots els tags de l&#39;event separats per espais. </div><div class="ttdef"><b>Definition:</b> Event.cc:32</div></div>
-<div class="ttc" id="class_event_html_a16ed22cc72c0249ade170184f280a1d8"><div class="ttname"><a href="class_event.html#a16ed22cc72c0249ade170184f280a1d8">Event::setTitol</a></div><div class="ttdeci">void setTitol(string titol)</div><div class="ttdoc">Assigna un nou titol. </div><div class="ttdef"><b>Definition:</b> Event.cc:41</div></div>
-<div class="ttc" id="class_event_html_a3f8e092c3f470034b0ae8273d8ec5cbb"><div class="ttname"><a href="class_event.html#a3f8e092c3f470034b0ae8273d8ec5cbb">Event::setTags</a></div><div class="ttdeci">void setTags(stack&lt; string &gt; tags)</div><div class="ttdoc">Assigna un nou tag a l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:49</div></div>
-<div class="ttc" id="class_event_html_a5a674a90725e7589757e98de7f109243"><div class="ttname"><a href="class_event.html#a5a674a90725e7589757e98de7f109243">Event::getTitol</a></div><div class="ttdeci">string getTitol() const </div><div class="ttdoc">retorna el titol de l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:24</div></div>
-<div class="ttc" id="class_event_html_a7bd83fe91f68446aee88fd69bd9ee388"><div class="ttname"><a href="class_event.html#a7bd83fe91f68446aee88fd69bd9ee388">Event::delTag</a></div><div class="ttdeci">void delTag(stack&lt; string &gt; tags)</div><div class="ttdoc">Metode d&#39;esborrat de tags de l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:65</div></div>
-<div class="ttc" id="class_event_html_a4262e77c2021435ab9f9535f0008c593"><div class="ttname"><a href="class_event.html#a4262e77c2021435ab9f9535f0008c593">Event::sRe</a></div><div class="ttdeci">bool sRe(string &amp;s) const </div><div class="ttdoc">busqueda d&#39;una expresio regular de tags </div><div class="ttdef"><b>Definition:</b> Event.cc:57</div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tag_8hh.html">tag.hh</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_event.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_event.html">Event</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> titol;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_tag.html">Tag</a> tagList;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//array tags; // hay que perfilar esto ._.¡</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//Constructora per defecte</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_event.html">Event</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//Constructora custom</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_event.html">Event</a>(<span class="keywordtype">string</span> titol,stack&lt;string&gt; nTags);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//Destructora</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//~Event();</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_event.html#a5a674a90725e7589757e98de7f109243">getTitol</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_event.html#ad17c21131ed964fc3498689e9f7413b4">getTags</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a16ed22cc72c0249ade170184f280a1d8">setTitol</a>(<span class="keywordtype">string</span> titol);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#ad8435cfd214339a65d51c08e548c8133">setTags</a>(stack&lt;string&gt;&amp; tags);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_event.html#a4262e77c2021435ab9f9535f0008c593">sRe</a>(<span class="keywordtype">string</span>&amp; s)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#af404fb1b62de2ec2139b32db4510e1ac">delTag</a>(stack&lt;string&gt;&amp; tags);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_event.html#a58e213ecfa7b2beedc275a2b4dc86eaf">delAllTags</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Conté un únic event. </div><div class="ttdef"><b>Definition:</b> Event.hh:15</div></div>
+<div class="ttc" id="class_event_html_ad8435cfd214339a65d51c08e548c8133"><div class="ttname"><a href="class_event.html#ad8435cfd214339a65d51c08e548c8133">Event::setTags</a></div><div class="ttdeci">void setTags(stack&lt; string &gt; &amp;tags)</div><div class="ttdoc">Assigna un nou tag a l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:44</div></div>
+<div class="ttc" id="class_event_html_a58e213ecfa7b2beedc275a2b4dc86eaf"><div class="ttname"><a href="class_event.html#a58e213ecfa7b2beedc275a2b4dc86eaf">Event::delAllTags</a></div><div class="ttdeci">void delAllTags()</div><div class="ttdoc">esborra tots els tags [mes rapid que delTag [nomes per esborrar tots]] </div><div class="ttdef"><b>Definition:</b> Event.cc:68</div></div>
+<div class="ttc" id="class_event_html_af404fb1b62de2ec2139b32db4510e1ac"><div class="ttname"><a href="class_event.html#af404fb1b62de2ec2139b32db4510e1ac">Event::delTag</a></div><div class="ttdeci">void delTag(stack&lt; string &gt; &amp;tags)</div><div class="ttdoc">Metode d&#39;esborrat de tags de l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:60</div></div>
+<div class="ttc" id="class_tag_html"><div class="ttname"><a href="class_tag.html">Tag</a></div><div class="ttdoc">Conte el conjunt. </div><div class="ttdef"><b>Definition:</b> Tag.hh:28</div></div>
+<div class="ttc" id="class_event_html_ad17c21131ed964fc3498689e9f7413b4"><div class="ttname"><a href="class_event.html#ad17c21131ed964fc3498689e9f7413b4">Event::getTags</a></div><div class="ttdeci">string getTags() const </div><div class="ttdoc">Retorna un string amb tots els tags de l&#39;event separats per espais. </div><div class="ttdef"><b>Definition:</b> Event.cc:28</div></div>
+<div class="ttc" id="class_event_html_a16ed22cc72c0249ade170184f280a1d8"><div class="ttname"><a href="class_event.html#a16ed22cc72c0249ade170184f280a1d8">Event::setTitol</a></div><div class="ttdeci">void setTitol(string titol)</div><div class="ttdoc">Assigna un nou titol. </div><div class="ttdef"><b>Definition:</b> Event.cc:36</div></div>
+<div class="ttc" id="class_event_html_a5a674a90725e7589757e98de7f109243"><div class="ttname"><a href="class_event.html#a5a674a90725e7589757e98de7f109243">Event::getTitol</a></div><div class="ttdeci">string getTitol() const </div><div class="ttdoc">retorna el titol de l&#39;event. </div><div class="ttdef"><b>Definition:</b> Event.cc:20</div></div>
+<div class="ttc" id="_tag_8hh_html"><div class="ttname"><a href="_tag_8hh.html">Tag.hh</a></div><div class="ttdoc">Classe Tag. </div></div>
+<div class="ttc" id="class_event_html_a4262e77c2021435ab9f9535f0008c593"><div class="ttname"><a href="class_event.html#a4262e77c2021435ab9f9535f0008c593">Event::sRe</a></div><div class="ttdeci">bool sRe(string &amp;s) const </div><div class="ttdoc">busqueda d&#39;una expresio regular de tags </div><div class="ttdef"><b>Definition:</b> Event.cc:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Jueves, 7 de Mayo de 2015 14:02:57 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Martes, 12 de Mayo de 2015 18:49:14 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

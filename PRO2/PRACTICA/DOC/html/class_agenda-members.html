@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Lab Pro2 [PRACTICA]
-   &#160;<span id="projectnumber">0.0.2:0001</span>
+   &#160;<span id="projectnumber">0.0.5:0012</span>
    </div>
   </td>
  </tr>
@@ -91,18 +91,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a2c929acc7e13b65b5a597b94db249c08">addEvent</a>(string titol, string date, string hora, stack&lt; string &gt; &amp;tags)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Agenda</b>() (definido en <a class="el" href="class_agenda.html">Agenda</a>)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#ae71248c9fc4536a04ee92e4702cf1f64">delEvent</a>(Rellotge key)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_agenda.html#abed56cab5f55439b60937448cc65dabd">escriure</a>(const pair&lt; Rellotge, Event &gt; &amp;e) const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a2fa68356644c21af8972f96a6813cfaf">getClock</a>() const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_agenda.html#aca5461f9195514d19b25cf65bb6f61b0">getLast</a>() const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#afed634afc41a8eecb28013c42dfd812a">listMatchEvents</a>(string hashtags, vector&lt; Rellotge &gt; &amp;v, Rellotge ini, Rellotge end)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_agenda.html#abd4b2a2bb44123f0dafdf9d998503ef6">modEvent</a>(Rellotge key, string titol, string date, string hora, stack&lt; string &gt; &amp;tags)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a9d8b2027c3e3fd0e8f6fb59864aca4a1">search</a>(vector&lt; Rellotge &gt; &amp;v, string ini, string end)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a2420c913f02af745ffbd455428ddbc18">delEvent</a>(Rellotge key, int i)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#a92735b9739edfdd888e6c8a50a9a9a1e">delTag</a>(Rellotge key, string tag)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#aab25168e626608ef9c2cc251614fb657">delTags</a>(Rellotge key)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#a4ac44b68b7545b848a60feb8c1caea0d">esBuit</a>() const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#abed56cab5f55439b60937448cc65dabd">escriure</a>(const pair&lt; Rellotge, Event &gt; &amp;e) const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#a2fa68356644c21af8972f96a6813cfaf">getClock</a>() const </td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a79f0deb9f644e512b2b143fd60b1bcd5">listMatchEvents</a>(string hashtags, Rellotge &amp;ini, Rellotge &amp;end)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#a62f873231c3a2de8867a1901065ba3d3">modEvent</a>(int i, Rellotge key, string titol, string date, string hora, stack&lt; string &gt; &amp;tags)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a15230e9ccd88c84d4333fe1e576d9724">pass_search</a>(Rellotge ini, Rellotge &amp;end, string &amp;tag)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#ab69c3b63cdac173d439aea0e821204c1">resultsSize</a>()</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a2e07bd3ed34c3bd86455f7df9af40aef">search</a>(Rellotge ini, Rellotge &amp;end, string &amp;tag)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_agenda.html#a80618f5a47f57db497057ff2c6767d0d">setClock</a>(Rellotge &amp;nuevo)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_agenda.html#a8ca8c9445b3f4435a6346ccc413327fc">vRe</a>(int i)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_agenda.html#aa182a77ef545679224988e47f7d889a1">vRi</a>(int i)</td><td class="entry"><a class="el" href="class_agenda.html">Agenda</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Jueves, 7 de Mayo de 2015 14:02:57 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Domingo, 24 de Mayo de 2015 20:42:25 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

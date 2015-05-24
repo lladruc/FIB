@@ -1,0 +1,16 @@
+Execució de la proba:
+
+./program.exe < jp_marcel_olsina_in.txt > out.txt
+diff -bB jp_marcel_olsina_out.txt out.txt
+
+El joc de probes intenta introduïr entrades en dates compreses entre el 22 i el 24 del 6 de 2015
+
+El prmer pas es intentar veure el bon funcionament de les expresions.
+Seguidament, s'intenta treballar el rellotge.
+S'intenta tocar coses del passat.
+S'intenta agregar tags a una tasca existent.
+S'intenta editar varies vegades una tasca.
+S'intenta agregar entrades al passat.
+S'intenta agregar una tasca al futur.
+S'intenta fixar una entrada en una existent
+S'intenta agregar un tag al passat.

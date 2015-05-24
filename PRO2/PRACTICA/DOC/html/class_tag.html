@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Lab Pro2 [PRACTICA]
-   &#160;<span id="projectnumber">0.0.2:0001</span>
+   &#160;<span id="projectnumber">0.0.5:0012</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 <p>Conte el conjunt.  
  <a href="class_tag.html#details">Más...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_tag_8hh_source.html">Tag.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="tag_8hh_source.html">tag.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
@@ -101,19 +101,31 @@ Métodos públicos</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Tag</b> (stack&lt; string &gt; &amp;nTags)</td></tr>
 <tr class="separator:acad3c793c59260259f92997df2778e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a427e68abe4fcda497e2b1b697bae9879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a427e68abe4fcda497e2b1b697bae9879">addTags</a> (stack&lt; string &gt; &amp;nTags)</td></tr>
-<tr class="memdesc:a427e68abe4fcda497e2b1b697bae9879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade los tags del stack (ignora los que ya existen)  <a href="#a427e68abe4fcda497e2b1b697bae9879">Más...</a><br /></td></tr>
+<tr class="memdesc:a427e68abe4fcda497e2b1b697bae9879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metode per afegir els tags al stack (ignora els que ya existeixen)  <a href="#a427e68abe4fcda497e2b1b697bae9879">Más...</a><br /></td></tr>
 <tr class="separator:a427e68abe4fcda497e2b1b697bae9879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51960a077ff0607087ea34500929450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#aa51960a077ff0607087ea34500929450">delTags</a> (stack&lt; string &gt; &amp;delTags)</td></tr>
-<tr class="separator:aa51960a077ff0607087ea34500929450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbf3cf3c1192806b1b23538f7b3fd4f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a3fbf3cf3c1192806b1b23538f7b3fd4f">inmersionSearch</a> (pair&lt; string, string &gt; &amp;s)</td></tr>
-<tr class="memdesc:a3fbf3cf3c1192806b1b23538f7b3fd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció de busqueda d'inmersió.  <a href="#a3fbf3cf3c1192806b1b23538f7b3fd4f">Más...</a><br /></td></tr>
-<tr class="separator:a3fbf3cf3c1192806b1b23538f7b3fd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9f536d194f4ae82a61f605cfd5b3b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#afe9f536d194f4ae82a61f605cfd5b3b3">matchRegularExpresion</a> (string re)</td></tr>
-<tr class="separator:afe9f536d194f4ae82a61f605cfd5b3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b54f8096632f04635140b36e808821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#ae2b54f8096632f04635140b36e808821">matchTag</a> (string tag, <a class="el" href="_tag_8cc.html#aa1ffaea98934d2496035b29e4bee1786">itTag</a> &amp;r)</td></tr>
-<tr class="separator:ae2b54f8096632f04635140b36e808821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2e470058c7f10cb56a4eb392311d20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#abd2e470058c7f10cb56a4eb392311d20">matchTags</a> (stack&lt; string &gt; &amp;tags)</td></tr>
-<tr class="separator:abd2e470058c7f10cb56a4eb392311d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3669460d494d74796e7380337d19689d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a3669460d494d74796e7380337d19689d">delTags</a> (string &amp;delTag)</td></tr>
+<tr class="memdesc:a3669460d494d74796e7380337d19689d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metode per eliminar els tags del stack.  <a href="#a3669460d494d74796e7380337d19689d">Más...</a><br /></td></tr>
+<tr class="separator:a3669460d494d74796e7380337d19689d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a7142948682324acd67ced26c96453"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a56a7142948682324acd67ced26c96453">getTags</a> () const </td></tr>
+<tr class="memdesc:a56a7142948682324acd67ced26c96453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció de consulta de tags.  <a href="#a56a7142948682324acd67ced26c96453">Más...</a><br /></td></tr>
+<tr class="separator:a56a7142948682324acd67ced26c96453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcae820d66b60e502aace0997b53caf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#afcae820d66b60e502aace0997b53caf8">teTags</a> () const </td></tr>
+<tr class="memdesc:afcae820d66b60e502aace0997b53caf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció per verificar que hi ha tags.  <a href="#afcae820d66b60e502aace0997b53caf8">Más...</a><br /></td></tr>
+<tr class="separator:afcae820d66b60e502aace0997b53caf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8514b014ede9a24efadc5df44368d7cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a8514b014ede9a24efadc5df44368d7cd">iRs</a> (const string &amp;s, int &amp;i, bool &amp;ok, bool ev) const </td></tr>
+<tr class="memdesc:a8514b014ede9a24efadc5df44368d7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metode de cerca per expressi� regular.  <a href="#a8514b014ede9a24efadc5df44368d7cd">Más...</a><br /></td></tr>
+<tr class="separator:a8514b014ede9a24efadc5df44368d7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf0fe1af87c4286c73cfaf6bd3ce1d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#afcf0fe1af87c4286c73cfaf6bd3ce1d8">i_search</a> (string &amp;s) const </td></tr>
+<tr class="memdesc:afcf0fe1af87c4286c73cfaf6bd3ce1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció de recerca d'inmersió.  <a href="#afcf0fe1af87c4286c73cfaf6bd3ce1d8">Más...</a><br /></td></tr>
+<tr class="separator:afcf0fe1af87c4286c73cfaf6bd3ce1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c561df38e35497aa0ed8fd5b33e50c"><td class="memItemLeft" align="right" valign="top">pair&lt; bool, <a class="el" href="tag_8cc.html#a2d6fad7c9cbf2182af0468da031f8518">itTag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a14c561df38e35497aa0ed8fd5b33e50c">matchTag</a> (string tag) const </td></tr>
+<tr class="memdesc:a14c561df38e35497aa0ed8fd5b33e50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció trobar tag.  <a href="#a14c561df38e35497aa0ed8fd5b33e50c">Más...</a><br /></td></tr>
+<tr class="separator:a14c561df38e35497aa0ed8fd5b33e50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f791864ae65299a53719fa6a9be33f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#ac2f791864ae65299a53719fa6a9be33f">matchTags</a> (stack&lt; string &gt; &amp;tags) const </td></tr>
+<tr class="memdesc:ac2f791864ae65299a53719fa6a9be33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funció de recerca de tags.  <a href="#ac2f791864ae65299a53719fa6a9be33f">Más...</a><br /></td></tr>
+<tr class="separator:ac2f791864ae65299a53719fa6a9be33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9374d4968679365fdc16f0b5e8792e51"><td class="memItemLeft" align="right" valign="top">stack&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag.html#a9374d4968679365fdc16f0b5e8792e51">hisTags</a> () const </td></tr>
+<tr class="separator:a9374d4968679365fdc16f0b5e8792e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Conte el conjunt. </p>
@@ -132,7 +144,7 @@ Métodos públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Añade los tags del stack (ignora los que ya existen) </p>
+<p>Metode per afegir els tags al stack (ignora els que ya existeixen) </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>tags ara conte els nous tags</dd></dl>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
@@ -140,91 +152,147 @@ Métodos públicos</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa51960a077ff0607087ea34500929450"></a>
+<a class="anchor" id="a3669460d494d74796e7380337d19689d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Tag::delTags </td>
           <td>(</td>
-          <td class="paramtype">stack&lt; string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>delTags</em></td><td>)</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>delTag</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Metode per eliminar els tags del stack. </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cert </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Si el tag existeix, l'esborra. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3fbf3cf3c1192806b1b23538f7b3fd4f"></a>
+<a class="anchor" id="a56a7142948682324acd67ced26c96453"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string Tag::inmersionSearch </td>
+          <td class="memname">string Tag::getTags </td>
           <td>(</td>
-          <td class="paramtype">pair&lt; string, string &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funció de consulta de tags. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>retorna una cadena amb tots els tags de la tasca </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9374d4968679365fdc16f0b5e8792e51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stack&lt; string &gt; Tag::hisTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondición</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcf0fe1af87c4286c73cfaf6bd3ce1d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Tag::i_search </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funció de busqueda d'inmersió. </p>
-<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd></dd></dl>
+<p>Funció de recerca d'inmersió. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>s != NULL </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>retorna true si els tags del event compleixen les condicions de s </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="afe9f536d194f4ae82a61f605cfd5b3b3"></a>
+<a class="anchor" id="a8514b014ede9a24efadc5df44368d7cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Tag::matchRegularExpresion </td>
+          <td class="memname">void Tag::iRs </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>re</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae2b54f8096632f04635140b36e808821"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Tag::matchTag </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>tag</em>, </td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_tag_8cc.html#aa1ffaea98934d2496035b29e4bee1786">itTag</a> &amp;&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>ok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ev</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Metode de cerca per expressi� regular. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>ok retorna true si es compleix la expressi�</dd></dl>
 <dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd></dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abd2e470058c7f10cb56a4eb392311d20"></a>
+<a class="anchor" id="a14c561df38e35497aa0ed8fd5b33e50c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; bool, <a class="el" href="tag_8cc.html#a2d6fad7c9cbf2182af0468da031f8518">itTag</a> &gt; Tag::matchTag </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funció trobar tag. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>tag != NULL </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Si es troba torna la posició del iterador on es troba Sino existeix retorna tags.end() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac2f791864ae65299a53719fa6a9be33f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,23 +301,44 @@ Métodos públicos</h2></td></tr>
           <td>(</td>
           <td class="paramtype">stack&lt; string &gt; &amp;&#160;</td>
           <td class="paramname"><em>tags</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd></dd></dl>
+
+<p>Funció de recerca de tags. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>tag != NULL </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>retorna true si es troba el tag en el set de tag de la tasca </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcae820d66b60e502aace0997b53caf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Tag::teTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funció per verificar que hi ha tags. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>true </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>retorna true si hi ha almenys 1 tag </dd></dl>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
-<li>src/<a class="el" href="_tag_8hh_source.html">Tag.hh</a></li>
-<li>src/<a class="el" href="_tag_8cc.html">Tag.cc</a></li>
+<li>src/<a class="el" href="tag_8hh_source.html">tag.hh</a></li>
+<li>src/<a class="el" href="tag_8cc.html">tag.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Jueves, 7 de Mayo de 2015 14:02:57 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Domingo, 24 de Mayo de 2015 20:42:25 para Lab Pro2 [PRACTICA] por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

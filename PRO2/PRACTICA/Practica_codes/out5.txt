@@ -1,0 +1,200 @@
+
++ compra 11.01.16 09:30 #lleure #art #sol
+
++ 27.08.15 00:00 #sorra #sol platja
+
++ 09:00 uni #apunts
+
++ 13:13 castell 12.05.15 #tgn #medieval
+
++ 01.06.15 08:45 examen final #EC #nota #examen
+
++ 01.06.15 11:45 examen final #PRO2 #aprovat #examen
+
++ 01.06.15 10:30 descans #sol
+
++ 15.12.15 07:45 muntanya #lleure
+
++ descans 09:00 13.05.15 #spa #lleure
+
++ 01.06.15 dinar 14:00 #examen
+
+passat?
+
+?
+1 uni 20.04.15 09:00 #apunts
+2 castell 12.05.15 13:13 #medieval #tgn
+3 descans 13.05.15 09:00 #lleure #spa
+4 examen final 01.06.15 08:45 #EC #examen #nota
+5 descans 01.06.15 10:30 #sol
+6 examen final 01.06.15 11:45 #PRO2 #aprovat #examen
+7 dinar 01.06.15 14:00 #examen
+8 platja 27.08.15 00:00 #sol #sorra
+9 muntanya 15.12.15 07:45 #lleure
+10 compra 11.01.16 09:30 #art #lleure #sol
+
+1 universitat #pro
+
+2 ruines 13:15 #sulet
+
+3 09:45 cavall 12.05.15
+
+4 13.09.16 09:54 descansar
+
+5 parcial 02.06.15 12:00
+
+6 platjeta 12:00 28.08.15
+
+7 16.12.15 mountain 08:00
+
+3 #tag1
+
+3 #tag2
+
+? 10.10.14 13.05.15
+1 universitat 20.04.15 09:00 #apunts #pro
+2 cavall 12.05.15 09:45 #lleure #spa #tag1 #tag2
+3 ruines 12.05.15 13:15 #medieval #sulet #tgn
+
+? 01.12.14 28.08.15
+1 universitat 20.04.15 09:00 #apunts #pro
+2 cavall 12.05.15 09:45 #lleure #spa #tag1 #tag2
+3 ruines 12.05.15 13:15 #medieval #sulet #tgn
+4 parcial 02.06.15 12:00 #sol
+5 platja 27.08.15 00:00 #sol #sorra
+6 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+
+?
+1 universitat 20.04.15 09:00 #apunts #pro
+2 cavall 12.05.15 09:45 #lleure #spa #tag1 #tag2
+3 ruines 12.05.15 13:15 #medieval #sulet #tgn
+4 parcial 02.06.15 12:00 #sol
+5 platja 27.08.15 00:00 #sol #sorra
+6 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+7 muntanya 15.12.15 07:45 #lleure
+8 mountain 16.12.15 08:00 #examen
+9 compra 11.01.16 09:30 #art #lleure #sol
+10 descansar 13.09.16 09:54 #EC #examen #nota
+
+? 28.08.15
+1 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+
+? 05.10.15 19.05.15
+
+? #sol
+1 parcial 02.06.15 12:00 #sol
+2 platja 27.08.15 00:00 #sol #sorra
+3 compra 11.01.16 09:30 #art #lleure #sol
+
+? #EC
+1 descansar 13.09.16 09:54 #EC #examen #nota
+
+? #lleure
+1 cavall 12.05.15 09:45 #lleure #spa #tag1 #tag2
+2 muntanya 15.12.15 07:45 #lleure
+3 compra 11.01.16 09:30 #art #lleure #sol
+
+? 28.08.15 #sol
+
+? #lleure 16.12.15
+
+? 01.06.15
+
+passat?
+
+rellotge?
+20.04.15 00:00
+
+rellotge 07.05.15
+
+rellotge?
+07.05.15 00:00
+
+rellotge 06.05.15 10:00
+No s'ha realitzat
+
+rellotge?
+07.05.15 00:00
+
+passat?
+1 universitat 20.04.15 09:00 #apunts #pro
+
+? #sol
+1 parcial 02.06.15 12:00 #sol
+2 platja 27.08.15 00:00 #sol #sorra
+3 compra 11.01.16 09:30 #art #lleure #sol
+
+? #EC
+1 descansar 13.09.16 09:54 #EC #examen #nota
+
+? (#sol,#examen)
+1 parcial 02.06.15 12:00 #sol
+2 platja 27.08.15 00:00 #sol #sorra
+3 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+4 mountain 16.12.15 08:00 #examen
+5 compra 11.01.16 09:30 #art #lleure #sol
+6 descansar 13.09.16 09:54 #EC #examen #nota
+
+? (#sol.#art)
+1 compra 11.01.16 09:30 #art #lleure #sol
+
+? (#sol,#art)
+1 parcial 02.06.15 12:00 #sol
+2 platja 27.08.15 00:00 #sol #sorra
+3 compra 11.01.16 09:30 #art #lleure #sol
+
+? ((#sol,#tgn).#medieval)
+1 ruines 12.05.15 13:15 #medieval #sulet #tgn
+
+? (#sol.(#sorra,#lleure))
+1 platja 27.08.15 00:00 #sol #sorra
+2 compra 11.01.16 09:30 #art #lleure #sol
+
+? ((#art,#PRO2).(#sol,#examen))
+1 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+2 compra 11.01.16 09:30 #art #lleure #sol
+
+? (((#sol.#lleure),#art),(#examen.#EC))
+1 compra 11.01.16 09:30 #art #lleure #sol
+2 descansar 13.09.16 09:54 #EC #examen #nota
+
+? (((#sol,#tgn).(#medieval,#art)),(#examen.(#EC,#PRO2)))
+1 ruines 12.05.15 13:15 #medieval #sulet #tgn
+2 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+3 compra 11.01.16 09:30 #art #lleure #sol
+4 descansar 13.09.16 09:54 #EC #examen #nota
+
+? ((#examen.(#EC,#PRO2)),((#art,#sorra).#sol))
+1 platja 27.08.15 00:00 #sol #sorra
+2 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+3 compra 11.01.16 09:30 #art #lleure #sol
+4 descansar 13.09.16 09:54 #EC #examen #nota
+
++ ordenem 10.10.15 12:15 #a #b #g #h #d #g #f #o #w
+
++ multitag 02.11.46 10:15 #sol #mar #muntanya #sol #solet #mar
+
+?
+1 cavall 12.05.15 09:45 #lleure #spa #tag1 #tag2
+2 ruines 12.05.15 13:15 #medieval #sulet #tgn
+3 parcial 02.06.15 12:00 #sol
+4 platja 27.08.15 00:00 #sol #sorra
+5 platjeta 28.08.15 12:00 #PRO2 #aprovat #examen
+6 ordenem 10.10.15 12:15 #a #b #d #f #g #h #o #w
+7 muntanya 15.12.15 07:45 #lleure
+8 mountain 16.12.15 08:00 #examen
+9 compra 11.01.16 09:30 #art #lleure #sol
+10 descansar 13.09.16 09:54 #EC #examen #nota
+11 multitag 02.11.46 10:15 #mar #muntanya #sol #solet
+
+rellotge 15.05.15 17:00
+
+1 cavalls 17.05.15 16:00 #dataenrere
+No s'ha realitzat
+
+2 casa 11.05.15 18:00 #passat
+No s'ha realitzat
+
+
+
+sortir

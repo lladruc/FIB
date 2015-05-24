@@ -33,6 +33,10 @@ Rellotge::Rellotge(string date, string hora){
   }
 }
 
+bool Rellotge::operator==(const Rellotge& r) const{
+  return this->date == r.date and this->hora == r.hora;
+}
+
 //Consultores
 
 /** @brief Retorna un string del tipus yy.mm.dd
@@ -80,9 +84,7 @@ string Rellotge::printDate() const{
 * \post si dataIn >= dataActual el rellotge s'actualitza amb la nova data.
 */
 void Rellotge::setDate(string date){
-  Rellotge aux(date,"00:00");
-  if((*this) < aux) this->date = aux.date;
-  else cout << "No s'ha realitzat." << endl;
+ this->date = date;
 }
 
 /** @brief actualitza la hora del sistema amb l'obtinguda
@@ -90,9 +92,7 @@ void Rellotge::setDate(string date){
 * \post si horaIN >= horaActual del rellotge s'actualitza amb la nova data.
 */
 void Rellotge::setTime(string hora){
-  Rellotge aux(this->date,hora);
-  if((*this) < aux) this->hora = aux.hora;
-  else cout << "No s'ha realitzat." << endl;
+  this->hora = hora;
 }
 
 /** @brief Actualitza la data del sistema amb l'obtinguda
@@ -101,8 +101,7 @@ void Rellotge::setTime(string hora){
 */
 void Rellotge::setTimeAndDate(string date, string hora){
   Rellotge aux(date,hora);
-  if((*this) < aux ) (*this) = aux;
-  else cout << "No s'ha realitzat." << endl;  
+  (*this) = aux;
 }
 
 /** @brief camiba yy <-> dd sobre el string.

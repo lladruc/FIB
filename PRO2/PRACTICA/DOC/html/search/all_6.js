@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['inmersionsearch',['inmersionSearch',['../class_tag.html#a3fbf3cf3c1192806b1b23538f7b3fd4f',1,'Tag']]],
-  ['ittag',['itTag',['../_tag_8cc.html#aa1ffaea98934d2496035b29e4bee1786',1,'itTag():&#160;Tag.cc'],['../_tag_8hh.html#aa1ffaea98934d2496035b29e4bee1786',1,'itTag():&#160;Tag.hh']]]
+  ['histags',['hisTags',['../class_tag.html#a9374d4968679365fdc16f0b5e8792e51',1,'Tag']]],
+  ['hora',['hora',['../class_comanda.html#ae8bca2ad702d3316dc1c53dcab7cac02',1,'Comanda']]]
 ];

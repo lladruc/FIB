@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['tag',['Tag',['../class_tag.html',1,'']]],
-  ['tag_2ecc',['Tag.cc',['../_tag_8cc.html',1,'']]],
-  ['tag_2ehh',['Tag.hh',['../_tag_8hh.html',1,'']]],
-  ['tasca',['tasca',['../class_comanda.html#a67591051e9c5977c324ad8f8c3ac16e3',1,'Comanda']]],
-  ['te_5fexpressio',['te_expressio',['../class_comanda.html#a81d17f4233e33f3baac7633546c066f0',1,'Comanda']]],
-  ['te_5fhora',['te_hora',['../class_comanda.html#abf8b926146f3664aacfd24d7800014e5',1,'Comanda']]],
-  ['te_5ftitol',['te_titol',['../class_comanda.html#a5452f5a877d58627cd2bd871cf31b074',1,'Comanda']]],
-  ['tipus_5fesborrat',['tipus_esborrat',['../class_comanda.html#a998dc172668a108837512f818ca5430f',1,'Comanda::tipus_esborrat()'],['../class_token.html#a12c961c772aa760b719dc3becb523ac4',1,'Token::tipus_esborrat()']]],
-  ['titol',['titol',['../class_comanda.html#ad1cefdda3db389d9ab536a59e2ee907d',1,'Comanda']]],
-  ['token',['Token',['../class_token.html',1,'Token'],['../class_token.html#a2ecb0099476455ed7ce3c05abcbb2e31',1,'Token::Token()']]],
-  ['token_2ehh',['token.hh',['../token_8hh.html',1,'']]]
+  ['search',['search',['../class_agenda.html#a2e07bd3ed34c3bd86455f7df9af40aef',1,'Agenda']]],
+  ['setclock',['setClock',['../class_agenda.html#a80618f5a47f57db497057ff2c6767d0d',1,'Agenda']]],
+  ['setdate',['setDate',['../class_rellotge.html#a19fc5ccb1b3949979f03f207f877c059',1,'Rellotge']]],
+  ['settags',['setTags',['../class_event.html#ad8435cfd214339a65d51c08e548c8133',1,'Event']]],
+  ['settime',['setTime',['../class_rellotge.html#a8b4ddc7c6b02397c415a2f0ca815dc04',1,'Rellotge']]],
+  ['settimeanddate',['setTimeAndDate',['../class_rellotge.html#a418c7be8bf66f6e27291d6b77dcd969f',1,'Rellotge']]],
+  ['settitol',['setTitol',['../class_event.html#a16ed22cc72c0249ade170184f280a1d8',1,'Event']]],
+  ['sre',['sRe',['../class_event.html#a493830148bdab7c4ae1210d7cee91b81',1,'Event']]]
 ];

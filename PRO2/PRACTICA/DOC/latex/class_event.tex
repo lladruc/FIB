@@ -7,7 +7,7 @@ Conté un únic event.
 
 
 
-{\ttfamily \#include $<$Event.\+hh$>$}
+{\ttfamily \#include $<$event.\+hh$>$}
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
@@ -15,20 +15,27 @@ Conté un únic event.
 \hypertarget{class_event_abf070291c8f16b4fb208ff747461c4ec}{}{\bfseries Event} (string titol, stack$<$ string $>$ n\+Tags)\label{class_event_abf070291c8f16b4fb208ff747461c4ec}
 
 \item 
+\hypertarget{class_event_aee1b4c7b6d48a5411a12447e2b207f93}{}bool {\bfseries operator==} (const \hyperlink{class_event}{Event} \&e) const \label{class_event_aee1b4c7b6d48a5411a12447e2b207f93}
+
+\item 
 string \hyperlink{class_event_a5a674a90725e7589757e98de7f109243}{get\+Titol} () const 
 \begin{DoxyCompactList}\small\item\em retorna el titol de l\textquotesingle{}event. \end{DoxyCompactList}\item 
 string \hyperlink{class_event_ad17c21131ed964fc3498689e9f7413b4}{get\+Tags} () const 
-\begin{DoxyCompactList}\small\item\em Retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Metode que retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. \end{DoxyCompactList}\item 
 void \hyperlink{class_event_a16ed22cc72c0249ade170184f280a1d8}{set\+Titol} (string titol)
-\begin{DoxyCompactList}\small\item\em Assigna un nou titol. \end{DoxyCompactList}\item 
-void \hyperlink{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}{set\+Tags} (stack$<$ string $>$ tags)
-\begin{DoxyCompactList}\small\item\em Assigna un nou tag a l\textquotesingle{}event. \end{DoxyCompactList}\item 
-bool \hyperlink{class_event_a4262e77c2021435ab9f9535f0008c593}{s\+Re} (string \&s) const 
-\begin{DoxyCompactList}\small\item\em busqueda d\textquotesingle{}una expresio regular de tags \end{DoxyCompactList}\item 
-void \hyperlink{class_event_a7bd83fe91f68446aee88fd69bd9ee388}{del\+Tag} (stack$<$ string $>$ tags)
+\begin{DoxyCompactList}\small\item\em Metode per assignar un nou titol. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_ad8435cfd214339a65d51c08e548c8133}{set\+Tags} (stack$<$ string $>$ \&tags)
+\begin{DoxyCompactList}\small\item\em Metode per assignar un nou tag a l\textquotesingle{}event. \end{DoxyCompactList}\item 
+bool \hyperlink{class_event_a493830148bdab7c4ae1210d7cee91b81}{s\+Re} (string s) const 
+\begin{DoxyCompactList}\small\item\em Metode de cerca d\textquotesingle{}una expresio regular de tags. \end{DoxyCompactList}\item 
+bool \hyperlink{class_event_a575d9335b139c4172e83e96e3355b152}{te\+Tags} () const 
+\begin{DoxyCompactList}\small\item\em Funció de cerca de tags. \end{DoxyCompactList}\item 
+bool \hyperlink{class_event_a0435e64f8a58116953bbb7926d423334}{find\+Tag} (string \&tag) const 
+\begin{DoxyCompactList}\small\item\em Funció de cerca de tags. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a7de280910bb66cc6a8370e9ad39282ee}{del\+Tag} (string \&tags)
 \begin{DoxyCompactList}\small\item\em Metode d\textquotesingle{}esborrat de tags de l\textquotesingle{}event. \end{DoxyCompactList}\item 
 void \hyperlink{class_event_a58e213ecfa7b2beedc275a2b4dc86eaf}{del\+All\+Tags} ()
-\begin{DoxyCompactList}\small\item\em esborra tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metode per esborrar tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
@@ -44,7 +51,9 @@ Conté un únic event.
 )}\label{class_event_a58e213ecfa7b2beedc275a2b4dc86eaf}
 
 
-esborra tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]} 
+Metode per esborrar tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]}. 
+
+esborra tots els tags \mbox{[}mes rapid que del\+Tag \mbox{[}nomes per esborrar tots\mbox{]}\mbox{]}
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -52,13 +61,13 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 L\textquotesingle{}event no contindra cap tag 
 \end{DoxyPostcond}
-\hypertarget{class_event_a7bd83fe91f68446aee88fd69bd9ee388}{}\index{Event@{Event}!del\+Tag@{del\+Tag}}
+\hypertarget{class_event_a7de280910bb66cc6a8370e9ad39282ee}{}\index{Event@{Event}!del\+Tag@{del\+Tag}}
 \index{del\+Tag@{del\+Tag}!Event@{Event}}
 \subsubsection[{del\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::del\+Tag (
 \begin{DoxyParamCaption}
-\item[{stack$<$ string $>$}]{tags}
+\item[{string \&}]{tags}
 \end{DoxyParamCaption}
-)}\label{class_event_a7bd83fe91f68446aee88fd69bd9ee388}
+)}\label{class_event_a7de280910bb66cc6a8370e9ad39282ee}
 
 
 Metode d\textquotesingle{}esborrat de tags de l\textquotesingle{}event. 
@@ -69,6 +78,23 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 tags conte tots els tags menys els rebuts 
 \end{DoxyPostcond}
+\hypertarget{class_event_a0435e64f8a58116953bbb7926d423334}{}\index{Event@{Event}!find\+Tag@{find\+Tag}}
+\index{find\+Tag@{find\+Tag}!Event@{Event}}
+\subsubsection[{find\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Event\+::find\+Tag (
+\begin{DoxyParamCaption}
+\item[{string \&}]{tag}
+\end{DoxyParamCaption}
+) const}\label{class_event_a0435e64f8a58116953bbb7926d423334}
+
+
+Funció de cerca de tags. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna true si es troba el tag 
+\end{DoxyPostcond}
 \hypertarget{class_event_ad17c21131ed964fc3498689e9f7413b4}{}\index{Event@{Event}!get\+Tags@{get\+Tags}}
 \index{get\+Tags@{get\+Tags}!Event@{Event}}
 \subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}string Event\+::get\+Tags (
@@ -78,7 +104,9 @@ tags conte tots els tags menys els rebuts
 ) const}\label{class_event_ad17c21131ed964fc3498689e9f7413b4}
 
 
-Retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. 
+Metode que retorna un string amb tots els tags de l\textquotesingle{}event separats per espais. 
+
+Retorna un string amb tots els tags de l\textquotesingle{}event separats per espais.
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -103,16 +131,18 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 retorna el titol de l\textquotesingle{}event. 
 \end{DoxyPostcond}
-\hypertarget{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}{}\index{Event@{Event}!set\+Tags@{set\+Tags}}
+\hypertarget{class_event_ad8435cfd214339a65d51c08e548c8133}{}\index{Event@{Event}!set\+Tags@{set\+Tags}}
 \index{set\+Tags@{set\+Tags}!Event@{Event}}
 \subsubsection[{set\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+::set\+Tags (
 \begin{DoxyParamCaption}
-\item[{stack$<$ string $>$}]{tags}
+\item[{stack$<$ string $>$ \&}]{tags}
 \end{DoxyParamCaption}
-)}\label{class_event_a3f8e092c3f470034b0ae8273d8ec5cbb}
+)}\label{class_event_ad8435cfd214339a65d51c08e548c8133}
 
 
-Assigna un nou tag a l\textquotesingle{}event. 
+Metode per assignar un nou tag a l\textquotesingle{}event. 
+
+Assigna un nou tag a l\textquotesingle{}event.
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -129,7 +159,9 @@ Tags incloura el nou tag
 )}\label{class_event_a16ed22cc72c0249ade170184f280a1d8}
 
 
-Assigna un nou titol. 
+Metode per assignar un nou titol. 
+
+Assigna un nou titol.
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -137,16 +169,18 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 Titol pren per valor el rebut per parametre 
 \end{DoxyPostcond}
-\hypertarget{class_event_a4262e77c2021435ab9f9535f0008c593}{}\index{Event@{Event}!s\+Re@{s\+Re}}
+\hypertarget{class_event_a493830148bdab7c4ae1210d7cee91b81}{}\index{Event@{Event}!s\+Re@{s\+Re}}
 \index{s\+Re@{s\+Re}!Event@{Event}}
 \subsubsection[{s\+Re}]{\setlength{\rightskip}{0pt plus 5cm}bool Event\+::s\+Re (
 \begin{DoxyParamCaption}
-\item[{string \&}]{s}
+\item[{string}]{s}
 \end{DoxyParamCaption}
-) const}\label{class_event_a4262e77c2021435ab9f9535f0008c593}
+) const}\label{class_event_a493830148bdab7c4ae1210d7cee91b81}
 
 
-busqueda d\textquotesingle{}una expresio regular de tags 
+Metode de cerca d\textquotesingle{}una expresio regular de tags. 
+
+busqueda d\textquotesingle{}una expresio regular de tags
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -154,9 +188,26 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 Retorna si l\textquotesingle{}event de l\textquotesingle{}agenda compleix la expresio regular 
 \end{DoxyPostcond}
+\hypertarget{class_event_a575d9335b139c4172e83e96e3355b152}{}\index{Event@{Event}!te\+Tags@{te\+Tags}}
+\index{te\+Tags@{te\+Tags}!Event@{Event}}
+\subsubsection[{te\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}bool Event\+::te\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_event_a575d9335b139c4172e83e96e3355b152}
+
+
+Funció de cerca de tags. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna true si es troba el tag 
+\end{DoxyPostcond}
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_event_8hh}{Event.\+hh}\item 
-src/\hyperlink{_event_8cc}{Event.\+cc}\end{DoxyCompactItemize}
+src/\hyperlink{event_8hh}{event.\+hh}\item 
+src/\hyperlink{event_8cc}{event.\+cc}\end{DoxyCompactItemize}

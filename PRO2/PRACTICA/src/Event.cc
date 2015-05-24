@@ -4,11 +4,29 @@
     //Constructora per defecte
     Event::Event(){
       titol = "";
+      tagList = Tag();
     }
     //Constructora custom
     Event::Event(string titol,stack<string> nTags){
       this->titol = titol;
       tagList.addTags(nTags);
+    }
+
+
+    bool Event::operator==(const Event& e)const {
+        bool eq = this->titol == e.titol;
+        stack<string> aux1 = this->tagList.hisTags();
+        stack<string> aux2 = e.tagList.hisTags();
+        if(not (aux1.empty() and aux2.empty())){
+            while(not aux1.empty() and aux2.empty() and eq){
+                eq = aux1.top() == aux2.top();
+                aux1.pop();
+                aux2.pop();
+            }
+        }
+        if(not aux1.empty() or not aux2.empty()) eq = false;
+        return eq;
+
     }
     //Destructora
     //~Event();
@@ -49,8 +67,21 @@
         \pre Cert
         \post Retorna si l'event de l'agenda compleix la expresio regular
     */
-    bool Event::sRe(string& s)const{
-        return tagList.i_search(s);
+    bool Event::sRe(string s)const{
+      return tagList.i_search(s);
+    /*   bool ok = false;
+        int i = 0;
+        tagList.iRs(s,i,ok);
+        return ok; */
+    }
+
+    bool Event::teTags()const{
+        return tagList.teTags();
+    }
+
+    bool Event::findTag(string& tag)const{
+        if(tag.length() < 1) return true;
+        return tagList.matchTag(tag).first;
     }
 
     /** @brief Metode d'esborrat de tags de l'event

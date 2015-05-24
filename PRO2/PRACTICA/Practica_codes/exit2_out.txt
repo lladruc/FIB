@@ -1,0 +1,166 @@
+
++ prepara la practica 20.04.15 19:00 #por #juegosdelhambre
+
++ començar la lectura 21.04.15 18:00 #flipar #por
+
++ preguntar al professor sobre tot 12:00 #pro2 #muerte
+
++ parlar amb el company 22.05.15 10:00 #start #practica
+
++ a picar codi 22.05.15 12:00 #nosequefer
+
++ especificacio feta 26.05.15 22:00 #practica #pro2
+
+?
+1 preguntar al professor sobre tot 20.04.15 12:00 #muerte #pro2
+2 prepara la practica 20.04.15 19:00 #juegosdelhambre #por
+3 començar la lectura 21.04.15 18:00 #flipar #por
+4 parlar amb el company 22.05.15 10:00 #practica #start
+5 a picar codi 22.05.15 12:00 #nosequefer
+6 especificacio feta 26.05.15 22:00 #practica #pro2
+
+rellotge 22.05.15 10:00
+
+? 22.05.15
+1 parlar amb el company 22.05.15 10:00 #practica #start
+2 a picar codi 22.05.15 12:00 #nosequefer
+
+? #practica
+1 parlar amb el company 22.05.15 10:00 #practica #start
+2 especificacio feta 26.05.15 22:00 #practica #pro2
+
+-6
+No s'ha realitzat
+
+1 #practica #muerte
+
+?
+1 parlar amb el company 22.05.15 10:00 #muerte #practica #start
+2 a picar codi 22.05.15 12:00 #nosequefer
+3 especificacio feta 26.05.15 22:00 #practica #pro2
+
+? 19.04.15 (#nosequefer,#pro2) 26.12.26
+1 a picar codi 22.05.15 12:00 #nosequefer
+2 especificacio feta 26.05.15 22:00 #practica #pro2
+
+passat?
+1 preguntar al professor sobre tot 20.04.15 12:00 #muerte #pro2
+2 prepara la practica 20.04.15 19:00 #juegosdelhambre #por
+3 començar la lectura 21.04.15 18:00 #flipar #por
+
+-1
+No s'ha realitzat
+
+3 -etiquetes
+No s'ha realitzat
+
+?
+1 parlar amb el company 22.05.15 10:00 #muerte #practica #start
+2 a picar codi 22.05.15 12:00 #nosequefer
+3 especificacio feta 26.05.15 22:00 #practica #pro2
+
+? 22.05.15 04.05.15
+
++ ja ens funciona casi tot!! 27.05.15 10:39 #motivats
+
++ vale era conya 27.05.15 10:40 #amargat #pro2 #practica
+
++ a tornar a picar codi 28.05.15 09:30 #casi #pro2
+
++ a picar mes codi 28.05.15 08:00 #practica #muerte 
+
++ nomes dos putus privats!! 29.05.15 18:00 #practica #casi
+
++ salvador a facebook 30.05.15 23:59 #alegria #shit #jutge
+
+?
+1 parlar amb el company 22.05.15 10:00 #muerte #practica #start
+2 a picar codi 22.05.15 12:00 #nosequefer
+3 especificacio feta 26.05.15 22:00 #practica #pro2
+4 ja ens funciona casi tot!! 27.05.15 10:39 #motivats
+5 vale era conya 27.05.15 10:40 #amargat #practica #pro2
+6 a picar mes codi 28.05.15 08:00 #muerte #practica
+7 a tornar a picar codi 28.05.15 09:30 #casi #pro2
+8 nomes dos putus privats!! 29.05.15 18:00 #casi #practica
+9 salvador a facebook 30.05.15 23:59 #alegria #jutge #shit
+
+-1
+
+1 -#muerte
+No s'ha realitzat
+
+1 #muerte
+No s'ha realitzat
+
+passat?
+1 preguntar al professor sobre tot 20.04.15 12:00 #muerte #pro2
+2 prepara la practica 20.04.15 19:00 #juegosdelhambre #por
+3 començar la lectura 21.04.15 18:00 #flipar #por
+
+? 20.04.15
+
+? #muerte
+1 a picar mes codi 28.05.15 08:00 #muerte #practica
+
+1 a picar mes codi 28.05.15 08:00 #muerte #practica
+
+? ((#pro2,#practica).#casi) 22.05.15 28.05.15
+1 a tornar a picar codi 28.05.15 09:30 #casi #pro2
+
+1 a tornar a picar codi 28.05.15 09:30 #casi #pro2
+
+-1
+
+-3
+No s'ha realitzat
+
+2 -etiquetes
+No s'ha realitzat
+
+?
+1 a picar codi 22.05.15 12:00 #nosequefer
+2 especificacio feta 26.05.15 22:00 #practica #pro2
+3 ja ens funciona casi tot!! 27.05.15 10:39 #motivats
+4 vale era conya 27.05.15 10:40 #amargat #practica #pro2
+5 a picar mes codi 28.05.15 08:00 #muerte #practica
+6 nomes dos putus privats!! 29.05.15 18:00 #casi #practica
+7 salvador a facebook 30.05.15 23:59 #alegria #jutge #shit
+
+2 22.05.15
+
+rellotge 23:59
+
+? 22.05.15
+
+?
+1 ja ens funciona casi tot!! 27.05.15 10:39 #motivats
+2 vale era conya 27.05.15 10:40 #amargat #practica #pro2
+3 a picar mes codi 28.05.15 08:00 #muerte #practica
+4 nomes dos putus privats!! 29.05.15 18:00 #casi #practica
+5 salvador a facebook 30.05.15 23:59 #alegria #jutge #shit
+
+? ((#shit,#pro2),#practica)
+1 vale era conya 27.05.15 10:40 #amargat #practica #pro2
+2 a picar mes codi 28.05.15 08:00 #muerte #practica
+3 nomes dos putus privats!! 29.05.15 18:00 #casi #practica
+4 salvador a facebook 30.05.15 23:59 #alegria #jutge #shit
+
++ a respirar un poco 21.05.15 22:00
+No s'ha realitzat
+
++ a respirar un poco 31.05.15 00:14 #alegria 
+
+-5
+No s'ha realitzat
+
+4 -#jutge
+
+?
+1 ja ens funciona casi tot!! 27.05.15 10:39 #motivats
+2 vale era conya 27.05.15 10:40 #amargat #practica #pro2
+3 a picar mes codi 28.05.15 08:00 #muerte #practica
+4 nomes dos putus privats!! 29.05.15 18:00 #casi #practica
+5 salvador a facebook 30.05.15 23:59 #alegria #shit
+6 a respirar un poco 31.05.15 00:14 #alegria
+
+sortir

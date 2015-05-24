@@ -1,0 +1,43 @@
++ my_event01 22.06.15 15:00 #pro2 #pointers #class #sleep #tags4tags #tags4likes
++ my_event02 22.06.15 17:00 #f #lab #more_sleep #cancer #endl #tags4tags
++ my_event03 22.06.15 #vga #no_class #events #free 19:00 #tags4likes
++ my_event04 19:00 #fm #no_plz #byDru 22.06.15 #sleep #tags4tags
++ my_event06 23.06.15 10:00 #fairy_tail #anime #relax #tags4tags #tags4likes
++ my_event07 23.06.15 11:00 #sleep #again #tags
++ my_event08 23.06.15 13:15 #mail #pro2 #secondExam #send #tags
++ my_event08 23.06.15 13:25 #mail #pro2 #secondExam #send #tags1
++ my_event09 23.06.15 13:35 #mail #pro2 #secondExam #send #tags2
++ my_event10 23.06.15 13:45 #mail #pro2 #secondExam #send #tags3
++ my_event11 23.06.15 14:05 #mail #pro2 #secondExam #send #tags4
++ my_event12 23.06.15 14:15 #mail #pro2 #secondExam #send #tags5
++ my_event13 23.06.15 14:16 #mail #pro2 #secondExam #send #tags2
++ my_event14 24.06.15 12:00 #pro1 #class #idiots #tags
++ my_event15 24.06.15 12:01 #pro1 #class #omg #tags
++ my_event16 24.06.15 12:05	#die #stupids #endl #tags4likes
+? (((#tags,#endl).(#pro2,#pro1)),#tags4likes)
+? (((#tags,#endl).(#pro2,#pro1)).#tags4likes)
+? 23.06.15 ((#secondExam.#tags1),#tags2)
+# rellotge (just coincidint en tasca)
+rellotge?
+rellotge 21.06.15 10:00
+rellotge 21.06.15 09:00
+rellotge 21.06.15 10.00
+passat?
+rellotge 23.06.15 10:10
+passat?
+1 #addingTags
+-1
+?
+1 #addingTags
+1 #addingTags
+3 22.06.15 16:00
+3 22.06.15 16:00 #challengeAccepted
+3 22.06.15 16:00 #challengeAccepted
+3 24.06.15 12:05
++ my_last_song 22.06.15 22:00 #sephirot
++ my_last_song_rly_true 26.06.15 22:00 #sephirot
+?
+4 my_last_song_rly_true 26.06.15 22:00 #sephirot
+passat?
+1 #add_random_tag
+sortir

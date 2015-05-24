@@ -7,7 +7,7 @@ Conte el conjunt.
 
 
 
-{\ttfamily \#include $<$Tag.\+hh$>$}
+{\ttfamily \#include $<$tag.\+hh$>$}
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
@@ -16,16 +16,22 @@ Conte el conjunt.
 
 \item 
 void \hyperlink{class_tag_a427e68abe4fcda497e2b1b697bae9879}{add\+Tags} (stack$<$ string $>$ \&n\+Tags)
-\begin{DoxyCompactList}\small\item\em Añade los tags del stack (ignora los que ya existen) \end{DoxyCompactList}\item 
-void \hyperlink{class_tag_aa51960a077ff0607087ea34500929450}{del\+Tags} (stack$<$ string $>$ \&del\+Tags)
-\item 
-string \hyperlink{class_tag_a3fbf3cf3c1192806b1b23538f7b3fd4f}{inmersion\+Search} (pair$<$ string, string $>$ \&s)
-\begin{DoxyCompactList}\small\item\em Funció de busqueda d\textquotesingle{}inmersió. \end{DoxyCompactList}\item 
-bool \hyperlink{class_tag_afe9f536d194f4ae82a61f605cfd5b3b3}{match\+Regular\+Expresion} (string re)
-\item 
-bool \hyperlink{class_tag_ae2b54f8096632f04635140b36e808821}{match\+Tag} (string tag, \hyperlink{_tag_8cc_aa1ffaea98934d2496035b29e4bee1786}{it\+Tag} \&r)
-\item 
-bool \hyperlink{class_tag_abd2e470058c7f10cb56a4eb392311d20}{match\+Tags} (stack$<$ string $>$ \&tags)
+\begin{DoxyCompactList}\small\item\em Metode per afegir els tags al stack (ignora els que ya existeixen) \end{DoxyCompactList}\item 
+void \hyperlink{class_tag_a3669460d494d74796e7380337d19689d}{del\+Tags} (string \&del\+Tag)
+\begin{DoxyCompactList}\small\item\em Metode per eliminar els tags del stack. \end{DoxyCompactList}\item 
+string \hyperlink{class_tag_a56a7142948682324acd67ced26c96453}{get\+Tags} () const 
+\begin{DoxyCompactList}\small\item\em Funció de consulta de tags. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tag_afcae820d66b60e502aace0997b53caf8}{te\+Tags} () const 
+\begin{DoxyCompactList}\small\item\em Funció per verificar que hi ha tags. \end{DoxyCompactList}\item 
+void \hyperlink{class_tag_a8514b014ede9a24efadc5df44368d7cd}{i\+Rs} (const string \&s, int \&i, bool \&ok, bool ev) const 
+\begin{DoxyCompactList}\small\item\em Metode de cerca per expressi� regular. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tag_afcf0fe1af87c4286c73cfaf6bd3ce1d8}{i\+\_\+search} (string \&s) const 
+\begin{DoxyCompactList}\small\item\em Funció de recerca d\textquotesingle{}inmersió. \end{DoxyCompactList}\item 
+pair$<$ bool, \hyperlink{tag_8cc_a2d6fad7c9cbf2182af0468da031f8518}{it\+Tag} $>$ \hyperlink{class_tag_a14c561df38e35497aa0ed8fd5b33e50c}{match\+Tag} (string tag) const 
+\begin{DoxyCompactList}\small\item\em Funció trobar tag. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tag_ac2f791864ae65299a53719fa6a9be33f}{match\+Tags} (stack$<$ string $>$ \&tags) const 
+\begin{DoxyCompactList}\small\item\em Funció de recerca de tags. \end{DoxyCompactList}\item 
+stack$<$ string $>$ \hyperlink{class_tag_a9374d4968679365fdc16f0b5e8792e51}{his\+Tags} () const 
 \end{DoxyCompactItemize}
 
 
@@ -42,7 +48,7 @@ Conte el conjunt.
 )}\label{class_tag_a427e68abe4fcda497e2b1b697bae9879}
 
 
-Añade los tags del stack (ignora los que ya existen) 
+Metode per afegir els tags al stack (ignora els que ya existeixen) 
 
 \begin{DoxyPrecond}{Precondición}
 Cert 
@@ -56,79 +62,150 @@ Cert
 \begin{DoxyPostcond}{Postcondición}
 agrega els tags nous (ignora els que ja hi son) 
 \end{DoxyPostcond}
-\hypertarget{class_tag_aa51960a077ff0607087ea34500929450}{}\index{Tag@{Tag}!del\+Tags@{del\+Tags}}
+\hypertarget{class_tag_a3669460d494d74796e7380337d19689d}{}\index{Tag@{Tag}!del\+Tags@{del\+Tags}}
 \index{del\+Tags@{del\+Tags}!Tag@{Tag}}
 \subsubsection[{del\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}void Tag\+::del\+Tags (
 \begin{DoxyParamCaption}
-\item[{stack$<$ string $>$ \&}]{del\+Tags}
+\item[{string \&}]{del\+Tag}
 \end{DoxyParamCaption}
-)}\label{class_tag_aa51960a077ff0607087ea34500929450}
+)}\label{class_tag_a3669460d494d74796e7380337d19689d}
+
+
+Metode per eliminar els tags del stack. 
+
 \begin{DoxyPrecond}{Precondición}
 Cert 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 Si el tag existeix, l\textquotesingle{}esborra. 
 \end{DoxyPostcond}
-\hypertarget{class_tag_a3fbf3cf3c1192806b1b23538f7b3fd4f}{}\index{Tag@{Tag}!inmersion\+Search@{inmersion\+Search}}
-\index{inmersion\+Search@{inmersion\+Search}!Tag@{Tag}}
-\subsubsection[{inmersion\+Search}]{\setlength{\rightskip}{0pt plus 5cm}string Tag\+::inmersion\+Search (
+\hypertarget{class_tag_a56a7142948682324acd67ced26c96453}{}\index{Tag@{Tag}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Tag@{Tag}}
+\subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}string Tag\+::get\+Tags (
 \begin{DoxyParamCaption}
-\item[{pair$<$ string, string $>$ \&}]{s}
+{}
 \end{DoxyParamCaption}
-)}\label{class_tag_a3fbf3cf3c1192806b1b23538f7b3fd4f}
+) const}\label{class_tag_a56a7142948682324acd67ced26c96453}
 
 
-Funció de busqueda d\textquotesingle{}inmersió. 
+Funció de consulta de tags. 
 
+\begin{DoxyPrecond}{Precondición}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna una cadena amb tots els tags de la tasca 
+\end{DoxyPostcond}
+\hypertarget{class_tag_a9374d4968679365fdc16f0b5e8792e51}{}\index{Tag@{Tag}!his\+Tags@{his\+Tags}}
+\index{his\+Tags@{his\+Tags}!Tag@{Tag}}
+\subsubsection[{his\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}stack$<$ string $>$ Tag\+::his\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_tag_a9374d4968679365fdc16f0b5e8792e51}
+\begin{DoxyPrecond}{Precondición}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+
+\end{DoxyPostcond}
+\hypertarget{class_tag_afcf0fe1af87c4286c73cfaf6bd3ce1d8}{}\index{Tag@{Tag}!i\+\_\+search@{i\+\_\+search}}
+\index{i\+\_\+search@{i\+\_\+search}!Tag@{Tag}}
+\subsubsection[{i\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}bool Tag\+::i\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{string \&}]{s}
+\end{DoxyParamCaption}
+) const}\label{class_tag_afcf0fe1af87c4286c73cfaf6bd3ce1d8}
+
+
+Funció de recerca d\textquotesingle{}inmersió. 
+
+\begin{DoxyPrecond}{Precondición}
+s != N\+U\+L\+L 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna true si els tags del event compleixen les condicions de s 
+\end{DoxyPostcond}
+\hypertarget{class_tag_a8514b014ede9a24efadc5df44368d7cd}{}\index{Tag@{Tag}!i\+Rs@{i\+Rs}}
+\index{i\+Rs@{i\+Rs}!Tag@{Tag}}
+\subsubsection[{i\+Rs}]{\setlength{\rightskip}{0pt plus 5cm}void Tag\+::i\+Rs (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s, }
+\item[{int \&}]{i, }
+\item[{bool \&}]{ok, }
+\item[{bool}]{ev}
+\end{DoxyParamCaption}
+) const}\label{class_tag_a8514b014ede9a24efadc5df44368d7cd}
+
+
+Metode de cerca per expressi� regular. 
+
+\begin{DoxyPrecond}{Precondición}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+ok retorna true si es compleix la expressi�
+\end{DoxyPostcond}
 \begin{DoxyPrecond}{Precondición}
 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 
 \end{DoxyPostcond}
-\hypertarget{class_tag_afe9f536d194f4ae82a61f605cfd5b3b3}{}\index{Tag@{Tag}!match\+Regular\+Expresion@{match\+Regular\+Expresion}}
-\index{match\+Regular\+Expresion@{match\+Regular\+Expresion}!Tag@{Tag}}
-\subsubsection[{match\+Regular\+Expresion}]{\setlength{\rightskip}{0pt plus 5cm}bool Tag\+::match\+Regular\+Expresion (
-\begin{DoxyParamCaption}
-\item[{string}]{re}
-\end{DoxyParamCaption}
-)}\label{class_tag_afe9f536d194f4ae82a61f605cfd5b3b3}
-\begin{DoxyPrecond}{Precondición}
-
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondición}
-
-\end{DoxyPostcond}
-\hypertarget{class_tag_ae2b54f8096632f04635140b36e808821}{}\index{Tag@{Tag}!match\+Tag@{match\+Tag}}
+\hypertarget{class_tag_a14c561df38e35497aa0ed8fd5b33e50c}{}\index{Tag@{Tag}!match\+Tag@{match\+Tag}}
 \index{match\+Tag@{match\+Tag}!Tag@{Tag}}
-\subsubsection[{match\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Tag\+::match\+Tag (
+\subsubsection[{match\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ bool, {\bf it\+Tag} $>$ Tag\+::match\+Tag (
 \begin{DoxyParamCaption}
-\item[{string}]{tag, }
-\item[{{\bf it\+Tag} \&}]{r}
+\item[{string}]{tag}
 \end{DoxyParamCaption}
-)}\label{class_tag_ae2b54f8096632f04635140b36e808821}
-\begin{DoxyPrecond}{Precondición}
+) const}\label{class_tag_a14c561df38e35497aa0ed8fd5b33e50c}
 
+
+Funció trobar tag. 
+
+\begin{DoxyPrecond}{Precondición}
+tag != N\+U\+L\+L 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-
+Si es troba torna la posició del iterador on es troba Sino existeix retorna tags.\+end() 
 \end{DoxyPostcond}
-\hypertarget{class_tag_abd2e470058c7f10cb56a4eb392311d20}{}\index{Tag@{Tag}!match\+Tags@{match\+Tags}}
+\hypertarget{class_tag_ac2f791864ae65299a53719fa6a9be33f}{}\index{Tag@{Tag}!match\+Tags@{match\+Tags}}
 \index{match\+Tags@{match\+Tags}!Tag@{Tag}}
 \subsubsection[{match\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}bool Tag\+::match\+Tags (
 \begin{DoxyParamCaption}
 \item[{stack$<$ string $>$ \&}]{tags}
 \end{DoxyParamCaption}
-)}\label{class_tag_abd2e470058c7f10cb56a4eb392311d20}
-\begin{DoxyPrecond}{Precondición}
+) const}\label{class_tag_ac2f791864ae65299a53719fa6a9be33f}
 
+
+Funció de recerca de tags. 
+
+\begin{DoxyPrecond}{Precondición}
+tag != N\+U\+L\+L 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
+retorna true si es troba el tag en el set de tag de la tasca 
+\end{DoxyPostcond}
+\hypertarget{class_tag_afcae820d66b60e502aace0997b53caf8}{}\index{Tag@{Tag}!te\+Tags@{te\+Tags}}
+\index{te\+Tags@{te\+Tags}!Tag@{Tag}}
+\subsubsection[{te\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}bool Tag\+::te\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_tag_afcae820d66b60e502aace0997b53caf8}
 
+
+Funció per verificar que hi ha tags. 
+
+\begin{DoxyPrecond}{Precondición}
+true 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna true si hi ha almenys 1 tag 
 \end{DoxyPostcond}
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_tag_8hh}{Tag.\+hh}\item 
-src/\hyperlink{_tag_8cc}{Tag.\+cc}\end{DoxyCompactItemize}
+src/\hyperlink{tag_8hh}{tag.\+hh}\item 
+src/\hyperlink{tag_8cc}{tag.\+cc}\end{DoxyCompactItemize}

@@ -12,10 +12,11 @@ var searchData=
   ['es_5fpassat',['es_passat',['../class_comanda.html#a1f435f8b605f0d1f5cbb06c8c6fe4005',1,'Comanda']]],
   ['es_5frellotge',['es_rellotge',['../class_comanda.html#aa8767f298317c3bb07f90676cabb8c43',1,'Comanda']]],
   ['es_5ftext',['es_text',['../class_token.html#ab40c482fd70278c5f8ce53aa364d957e',1,'Token']]],
+  ['esbuit',['esBuit',['../class_agenda.html#a4ac44b68b7545b848a60feb8c1caea0d',1,'Agenda']]],
   ['escriure',['escriure',['../class_agenda.html#abed56cab5f55439b60937448cc65dabd',1,'Agenda']]],
   ['etiqueta',['etiqueta',['../class_comanda.html#ac80e9a80d16c6bac9a134e431bca1ed0',1,'Comanda']]],
   ['event',['Event',['../class_event.html',1,'']]],
-  ['event_2ecc',['Event.cc',['../_event_8cc.html',1,'']]],
-  ['event_2ehh',['Event.hh',['../_event_8hh.html',1,'']]],
+  ['event_2ecc',['event.cc',['../event_8cc.html',1,'']]],
+  ['event_2ehh',['event.hh',['../event_8hh.html',1,'']]],
   ['expressio',['expressio',['../class_comanda.html#aa3191131592fbf58d20bed1052c31cd1',1,'Comanda']]]
 ];
